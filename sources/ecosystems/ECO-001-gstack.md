@@ -1,110 +1,67 @@
----
-id: ECO-001
+# GStack
 
-title: GStack
+## Summary
+AI coding workflow ecosystem focused on opinionated CLI-driven development patterns.
 
-category: Ecosystem
+## Repository
+https://github.com/garrytan/gstack
 
-status: Planned
+## Official Documentation
+https://github.com/garrytan/gstack
 
-priority: Critical
+## Category
+Ecosystem
 
-compatibility:
-  - OpenCode
-  - Claude Code
+## Status
+Reference Only
 
-repository: https://github.com/garrytan/gstack
+## Priority
+Low
 
-documentation:
+## Purpose
+Serve as reference material for workflow patterns and structural ideas.
 
-website:
+## Key Features
+- CLI-based workflow structure
+- Opinionated agent execution patterns
+- Integrated task flow design
 
-license:
+## Compatibility
+- OpenCode: Partial
+- Claude Code: Partial
+- Codex CLI: Unknown
+- Gemini CLI: Unknown
+- Cursor: Partial
 
-tags:
-  - ecosystem
-  - ai
-  - workflow
+## Advantages
+- Well structured workflow examples
+- Clear task decomposition patterns
 
-learning_curve: Medium
+## Limitations
+- Highly opinionated architecture
+- Limited portability across ecosystems
+- Overlaps with other agent frameworks
 
-complexity: Medium
+## Knowledge Extraction Score
+6/10
 
-maturity: Stable
+## Architectural Role
+Reference knowledge source only
 
-created:
+## Recommended Usage
+Study for ideas only. Do not adopt as base system.
 
-last_review:
+## Adoption Decision
+Rejected as primary ecosystem. Reference-only usage approved.
 
-next_review:
----
+## Related ADRs
+ADR-003
 
-# Summary
+## Related Resources
+RPT-001
 
-Pending analysis.
+## Last Review
+2026-07-02
 
----
-
-# Purpose
-
-Pending analysis.
-
----
-
-# Problem Solved
-
-Pending analysis.
-
----
-
-# Key Features
-
-To be documented.
-
----
-
-# Advantages
-
-Pending analysis.
-
----
-
-# Limitations
-
-Pending analysis.
-
----
-
-# Compatibility
-
-| Platform | Supported |
-|----------|-----------|
-| OpenCode | Unknown |
-| Claude Code | Unknown |
-| Codex CLI | Unknown |
-| Gemini CLI | Unknown |
-| Cursor | Unknown |
-
----
-
-# Evaluation
-
-Pending.
-
----
-
-# Recommendation
-
-Pending.
-
----
-
-# Notes
-
-This resource will be analyzed during Prompt B.
-
----
-
-# References
-
-Official GitHub repository.
+## Notes
+Use only for conceptual comparison with Superpowers and ECC.

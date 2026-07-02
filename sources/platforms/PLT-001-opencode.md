@@ -1,47 +1,69 @@
----
-id: PLT-001
+# OpenCode
 
-title: OpenCode
+## Summary
+Primary AI-native development environment used for agent-based coding workflows.
 
-category: Platform
+## Repository
+N/A (internal tool)
 
-status: Planned
+## Official Documentation
+N/A
 
-priority: Critical
+## Category
+Platform
 
-compatibility:
-  - Universal
+## Status
+Active
 
-tags:
-  - ai
-  - cli
-  - coding
+## Priority
+Critical
 
-learning_curve: Medium
+## Purpose
+Primary execution environment for AI-assisted development workflows.
 
-complexity: Medium
+## Key Features
+- Agent-based coding workflows
+- MCP integration support
+- Skill execution system
+- Plugin extensibility
+- CLI-driven interaction model
 
-maturity: Stable
----
+## Compatibility
+- OpenCode: Native
+- Claude Code: High
+- Codex CLI: Medium
+- Gemini CLI: Medium
+- Cursor: High
 
-# Summary
+## Advantages
+- Core development environment
+- High extensibility
+- Strong integration with MCPs and agents
 
-Primary AI platform of the workspace.
+## Limitations
+- Requires structured configuration
+- Dependency on external skills/plugins ecosystem
 
----
+## Knowledge Extraction Score
+10/10
 
-# Purpose
+## Architectural Role
+Primary execution layer
 
-Pending analysis.
+## Recommended Usage
+Main environment for implementation phase after research approval
 
----
+## Adoption Decision
+Already adopted
 
-# Features
+## Related ADRs
+ADR-001
 
-Pending analysis.
+## Related Resources
+RPT-001
 
----
+## Last Review
+2026-07-02
 
-# Recommendation
-
-Core platform.
+## Notes
+All approved components must be validated against OpenCode compatibility first.

@@ -1,110 +1,69 @@
----
-id: ECO-003
+# ECC
 
-title: ECC
+## Summary
+Collection of AI components including agents, skills and MCP-like modules designed for selective integration.
 
-category: Ecosystem
+## Repository
+https://github.com/affaan-m/ECC
 
-status: Planned
+## Official Documentation
+https://github.com/affaan-m/ECC
 
-priority: High
+## Category
+Ecosystem
 
-compatibility:
-  - OpenCode
-  - Claude Code
+## Status
+Selective Adoption
 
-repository: https://github.com/placeholder/ecc
+## Priority
+High
 
-documentation:
+## Purpose
+Provide curated reusable components for augmentation of the primary ecosystem.
 
-website:
+## Key Features
+- Large library of agents and skills
+- Modular components
+- Reusable MCP-like tools
+- Multi-framework compatibility
 
-license:
+## Compatibility
+- OpenCode: High
+- Claude Code: High
+- Codex CLI: Medium
+- Gemini CLI: Medium
+- Cursor: High
 
-tags:
-  - ecosystem
-  - ai
-  - workflow
+## Advantages
+- Large component ecosystem
+- Flexible integration options
+- High reuse potential
 
-learning_curve: Medium
+## Limitations
+- Risk of redundancy
+- Requires strict filtering
+- Not designed as full architecture
 
-complexity: Medium
+## Knowledge Extraction Score
+8/10
 
-maturity: Stable
+## Architectural Role
+Component library (not full framework)
 
-created:
+## Recommended Usage
+Selective extraction of high-value agents, skills and MCPs only
 
-last_review:
+## Adoption Decision
+Partial adoption. No full installation permitted.
 
-next_review:
----
+## Related ADRs
+ADR-002
 
-# Summary
+## Related Resources
+RPT-001
 
-Pending analysis.
+## Last Review
+2026-07-02
 
----
-
-# Purpose
-
-Pending analysis.
-
----
-
-# Problem Solved
-
-Pending analysis.
-
----
-
-# Key Features
-
-To be documented.
-
----
-
-# Advantages
-
-Pending analysis.
-
----
-
-# Limitations
-
-Pending analysis.
-
----
-
-# Compatibility
-
-| Platform | Supported |
-|----------|-----------|
-| OpenCode | Unknown |
-| Claude Code | Unknown |
-| Codex CLI | Unknown |
-| Gemini CLI | Unknown |
-| Cursor | Unknown |
-
----
-
-# Evaluation
-
-Pending.
-
----
-
-# Recommendation
-
-Pending.
-
----
-
-# Notes
-
-This resource will be analyzed during Prompt B.
-
----
-
-# References
-
-Official GitHub repository.
+## Notes
+Only curated components may be integrated into ai-workspace.

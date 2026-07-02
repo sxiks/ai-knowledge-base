@@ -1,110 +1,70 @@
----
-id: ECO-002
+# Superpowers
 
-title: Superpowers
+## Summary
+Modular AI development ecosystem designed for structured agent workflows, reproducibility and cross-platform compatibility.
 
-category: Ecosystem
+## Repository
+https://github.com/obra/superpowers
 
-status: Planned
+## Official Documentation
+https://github.com/obra/superpowers
 
-priority: High
+## Category
+Ecosystem
 
-compatibility:
-  - OpenCode
-  - Claude Code
+## Status
+Active
 
-repository: https://github.com/obra/superpowers
+## Priority
+Critical
 
-documentation:
+## Purpose
+Primary methodological foundation for AI workflow architecture in this project.
 
-website:
+## Key Features
+- Modular agent system
+- Structured workflows
+- Cross-platform compatibility
+- Reproducible execution patterns
+- Tool-agnostic design
 
-license:
+## Compatibility
+- OpenCode: High
+- Claude Code: High
+- Codex CLI: High
+- Gemini CLI: High
+- Cursor: High
 
-tags:
-  - ecosystem
-  - ai
-  - workflow
+## Advantages
+- Strong architectural consistency
+- High portability
+- Active development
+- Clear separation of concerns
 
-learning_curve: Medium
+## Limitations
+- Learning curve moderate
+- Requires structured adoption
 
-complexity: Medium
+## Knowledge Extraction Score
+10/10
 
-maturity: Stable
+## Architectural Role
+Primary ecosystem foundation
 
-created:
+## Recommended Usage
+Base framework for all agent and workflow design
 
-last_review:
+## Adoption Decision
+Fully adopted as core ecosystem
 
-next_review:
----
+## Related ADRs
+ADR-001
 
-# Summary
+## Related Resources
+RPT-001
 
-Pending analysis.
+## Last Review
+2026-07-02
 
----
-
-# Purpose
-
-Pending analysis.
-
----
-
-# Problem Solved
-
-Pending analysis.
-
----
-
-# Key Features
-
-To be documented.
-
----
-
-# Advantages
-
-Pending analysis.
-
----
-
-# Limitations
-
-Pending analysis.
-
----
-
-# Compatibility
-
-| Platform | Supported |
-|----------|-----------|
-| OpenCode | Unknown |
-| Claude Code | Unknown |
-| Codex CLI | Unknown |
-| Gemini CLI | Unknown |
-| Cursor | Unknown |
-
----
-
-# Evaluation
-
-Pending.
-
----
-
-# Recommendation
-
-Pending.
-
----
-
-# Notes
-
-This resource will be analyzed during Prompt B.
-
----
-
-# References
-
-Official GitHub repository.
+## Notes
+All other ecosystems must align conceptually with this system.
