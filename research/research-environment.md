@@ -8,6 +8,11 @@ Recommendations should avoid unnecessary duplication and should integrate natura
 
 ---
 
+Version: v1.0
+Last Updated: 2026-07-02
+
+---
+
 # System Information
 
 ## Operating System

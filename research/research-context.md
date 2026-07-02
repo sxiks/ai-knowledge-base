@@ -10,6 +10,11 @@ The objective is to identify the smallest set of high-quality tools that togethe
 
 ---
 
+Version: v1.0
+Last Updated: 2026-07-02
+
+---
+
 # Developer Profile
 
 Current level

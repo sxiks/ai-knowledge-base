@@ -2,7 +2,14 @@
 
 > Master research dataset for evaluating AI development platforms, ecosystems, agents, skills, plugins, MCPs, LSPs, workflows and engineering methodologies.
 
+
 ---
+
+Version: v1.0
+Last Updated: 2026-07-02
+
+---
+
 
 # Objective
 
