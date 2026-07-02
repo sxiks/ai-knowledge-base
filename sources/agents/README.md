@@ -22,6 +22,7 @@ This category includes:
 
 | ID | Resource | Status | Priority |
 |----|----------|----------|----------|
+| AGT-001 | Agency Agents | Planned | High |
 
 ---
 

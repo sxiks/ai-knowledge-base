@@ -21,7 +21,7 @@ This category includes:
 
 | ID | Resource | Status | Priority |
 |----|----------|----------|----------|
-
+| SKL-001 | Andrej Karpathy Skills | Planned | High |
 ---
 
 ## Resources

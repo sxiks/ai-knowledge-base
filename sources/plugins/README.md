@@ -21,7 +21,7 @@ This category includes:
 
 | ID | Resource | Status | Priority |
 |----|----------|----------|----------|
-
+| PLG-001 | Claude Mem | Planned | High |
 ---
 
 ## Resources

@@ -22,6 +22,8 @@ This category includes:
 
 | ID | Resource | Status | Priority |
 |----|----------|----------|----------|
+| PLT-001 | OpenCode | Planned | Critical |
+| PLT-002 | Claude Code | Planned | Critical |
 
 ---
 
