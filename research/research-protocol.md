@@ -306,3 +306,31 @@ Before finishing, verify that:
 - Every recommendation includes technical reasoning.
 - The report follows the objectives defined in `research-goals.md`.
 - The report is evidence-based rather than opinion-based.
+
+---
+
+# Incremental Research Mode
+
+When Deep Research mode is unavailable, this protocol must be executed incrementally.
+
+Instead of analyzing every source during a single session, divide the investigation into independent research reports.
+
+Each report must completely analyze one category before moving to the next.
+
+The recommended order is:
+
+1. Ecosystems
+2. Agents
+3. Skills
+4. Plugins
+5. MCP Servers
+6. LSPs
+7. Utilities
+8. Workflows
+9. Additional References
+
+Each report must be self-contained and follow the complete Investigation Protocol.
+
+The final ecosystem recommendations must only be produced after every category has been investigated.
+
+Do not make final decisions based on incomplete research.
