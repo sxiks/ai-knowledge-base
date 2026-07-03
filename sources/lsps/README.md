@@ -1,28 +1,10 @@
-# LSPs
-
-## Purpose
-
-Catalog AI agents relevant to software engineering and AI-assisted development.
-
----
-
-## Scope
-
-This category includes:
-
-- Language servers
-- Editor integrations
-- Development tooling
-
----
+# Lsps
 
 ## Resource Index
 
-| ID | Resource | Status | Priority |
-|----|----------|----------|----------|
+| ID | Resource | Summary |
+|----|----------|---------|
 
 ---
 
-## Resources
-
-No resources documented yet.
+Generated automatically by `scripts/update_indexes.sh`.

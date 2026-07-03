@@ -1,43 +1,13 @@
 # Methodologies
 
-## Purpose
-
-Document engineering methodologies adopted by the knowledge base.
-
 ## Resource Index
 
-| ID | Name | Status | Priority |
-|----|------|--------|----------|
-| MET-001 | Spec-Driven Development | Active | Critical |
-| MET-002 | Provider-Agnostic Engineering | Active | High |
-| MET-003 | Bootstrap Philosophy | Active | High |
+| ID | Resource | Summary |
+|----|----------|---------|
+| MET-001 | [Spec-Driven Development](./MET-001-spec-driven-development.md) | Engineering methodology where specifications become the primary source of implementation. |
+| MET-002 | [Provider-Agnostic Engineering](./MET-002-provider-agnostic-engineering.md) | Methodology focused on minimizing dependency on a single AI provider. |
+| MET-003 | [Bootstrap Philosophy](./MET-003-bootstrap-philosophy.md) | Methodology that prioritizes creating reusable foundations before expanding functionality. |
 
-## Relationships
+---
 
-```text
-Methodologies
-        ↓
-Workflows
-        ↓
-Architecture Decisions
-        ↓
-Knowledge Base
-        ↓
-Implementation
-```
-
-## Conventions
-
-- One methodology per file.
-- Methodologies define engineering principles.
-- Workflows implement methodologies.
-- Methodologies should remain platform-independent whenever possible.
-- Architectural changes require ADR updates.
-
-## Related Directories
-
-- workflows/
-- ecosystems/
-- agents/
-- skills/
-- mcps/
+Generated automatically by `scripts/update_indexes.sh`.
