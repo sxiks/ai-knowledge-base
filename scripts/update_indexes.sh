@@ -8,41 +8,16 @@
 
 set -Eeuo pipefail
 
+###############################################################################
+# Bootstrap
+###############################################################################
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+source "${SCRIPT_DIR}/lib/constants.sh"
+source "${SCRIPT_DIR}/lib/logging.sh"
+
 trap 'log_error "Unexpected error at line ${LINENO}."; exit 1' ERR
-
-###############################################################################
-# Global constants
-###############################################################################
-
-readonly SCRIPT_NAME="$(basename "$0")"
-readonly REPOSITORY_ROOT="$(git rev-parse --show-toplevel)"
-readonly SOURCES_DIR="${REPOSITORY_ROOT}/sources"
-
-###############################################################################
-# Logging
-###############################################################################
-
-log_info() {
-    printf '[INFO] %s\n' "$1"
-}
-
-log_success() {
-    printf '[ OK ] %s\n' "$1"
-}
-
-log_warning() {
-    printf '[WARN] %s\n' "$1"
-}
-
-log_error() {
-    printf '[FAIL] %s\n' "$1" >&2
-}
-
-die() {
-    log_error "$1"
-    exit 1
-}
-
 ###############################################################################
 # Repository validation
 ###############################################################################
@@ -54,10 +29,10 @@ validate_repository() {
     [[ -d "$SOURCES_DIR" ]] \
         || die "Missing directory: sources"
 
-    [[ -d "${REPOSITORY_ROOT}/docs" ]] \
+    [[ -d "$DOCS_DIR" ]] \
         || die "Missing directory: docs"
 
-    [[ -d "${REPOSITORY_ROOT}/templates" ]] \
+    [[ -d "$TEMPLATES_DIR" ]] \
         || die "Missing directory: templates"
 
     log_success "Repository validation completed."

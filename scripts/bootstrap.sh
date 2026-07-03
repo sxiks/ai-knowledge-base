@@ -1,14 +1,26 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
+set -Eeuo pipefail
 
-ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+###############################################################################
+# Bootstrap
+###############################################################################
 
-source "$ROOT_DIR/scripts/lib/colors.sh"
-source "$ROOT_DIR/scripts/lib/utils.sh"
-source "$ROOT_DIR/scripts/lib/dependencies.sh"
-source "$ROOT_DIR/scripts/lib/filesystem.sh"
-source "$ROOT_DIR/scripts/lib/git.sh"
+SCRIPT_DIR="$(
+    cd "$(dirname "${BASH_SOURCE[0]}")"
+    pwd
+)"
+
+source "${SCRIPT_DIR}/lib/constants.sh"
+source "${LIB_DIR}/logging.sh"
+source "${LIB_DIR}/utils.sh"
+source "${LIB_DIR}/dependencies.sh"
+source "${LIB_DIR}/filesystem.sh"
+source "${LIB_DIR}/git.sh"
+
+###############################################################################
+# Main
+###############################################################################
 
 print_header
 

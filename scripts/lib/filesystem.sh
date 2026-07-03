@@ -2,62 +2,58 @@
 
 create_missing_directories() {
 
-title "Checking directories"
+    log_title "Checking directories"
 
-local directories=(
+    local directories=(
 
-docs
-docs/analysis
-docs/architecture
-docs/comparisons
-docs/decisions
-docs/guides
+        docs
+        docs/analysis
+        docs/architecture
+        docs/comparisons
+        docs/decisions
+        docs/guides
 
-sources
+        sources
 
-templates
+        templates
 
-scripts/lib
+        scripts/lib
 
-archive
+        archive
 
-assets
-assets/images
+        assets
+        assets/images
 
-)
+    )
 
-for directory in "${directories[@]}"
-do
+    for directory in "${directories[@]}"
+    do
+        mkdir -p "$directory"
 
-    mkdir -p "$directory"
-
-    success "$directory"
-
-done
+        log_success "$directory"
+    done
 
 }
 
 create_missing_files() {
 
-title "Checking base files"
+    log_title "Checking base files"
 
-local files=(
+    local files=(
 
-README.md
-CHANGELOG.md
-CONTRIBUTING.md
-LICENSE
-.gitignore
+        README.md
+        CHANGELOG.md
+        CONTRIBUTING.md
+        LICENSE
+        .gitignore
 
-)
+    )
 
-for file in "${files[@]}"
-do
+    for file in "${files[@]}"
+    do
+        touch "$file"
 
-    touch "$file"
-
-    success "$file"
-
-done
+        log_success "$file"
+    done
 
 }

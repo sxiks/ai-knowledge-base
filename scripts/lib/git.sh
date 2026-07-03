@@ -2,9 +2,9 @@
 
 initialize_gitignore() {
 
-title "Checking .gitignore"
+    log_title "Checking .gitignore"
 
-cat > .gitignore << EOF
+    cat > .gitignore <<'EOF'
 .env
 .env.*
 
@@ -18,6 +18,6 @@ __pycache__/
 .DS_Store
 EOF
 
-success ".gitignore updated"
+    log_success ".gitignore updated"
 
 }
