@@ -1,7 +1,5 @@
 # PASO 1 — `scripts/README.md`
 
-
-
 # Scripts
 
 This directory contains the automation layer for the repository.
