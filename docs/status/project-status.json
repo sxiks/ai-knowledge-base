@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "description": "Canonical project status of ai-knowledge-base (AD-4). Every summary or dashboard of the project is derived from this file. Rules and vocabularies: docs/status/README.md.",
   "updated": "2026-11-18",
-  "based_on_commit": "0726a1f",
+  "based_on_commit": "4e83fd9",
   "project": {
     "name": "ai-knowledge-base",
     "repository": "https://github.com/sxiks/ai-knowledge-base",
@@ -23,7 +23,7 @@
     "platform_setup": "out-of-scope"
   },
   "branches": {
-    "develop": "0726a1f",
+    "develop": "4e83fd9",
     "main": "6b1f84a",
     "note": "main has not received the reconciliation commits."
   },
@@ -196,7 +196,7 @@
         "title": "Canonical project status file",
         "status": "completed",
         "commits": [
-          null
+          "4e83fd9"
         ]
       },
       {
@@ -442,7 +442,7 @@
         "status": "resolved",
         "resolved_in": {
           "step": "R3d",
-          "commit": null
+          "commit": "4e83fd9"
         },
         "approval": "AD-4"
       },
@@ -476,7 +476,10 @@
         "resolved_in": {
           "step": "R0",
           "commit": null
-        }
+        },
+        "evidence": [
+          "research/research-environment.md (since 9f4f25e): ai-workspace 'Not created yet (confirmed on 2026-11-13)'."
+        ]
       },
       {
         "id": "D-22",
@@ -486,7 +489,10 @@
         "resolved_in": {
           "step": "R0",
           "commit": null
-        }
+        },
+        "evidence": [
+          "Verified on 2026-11-18: local develop equal to origin/develop with no unpushed commits; every reconciliation commit was compared with the remote after its push."
+        ]
       }
     ]
   },
@@ -610,14 +616,6 @@
       "status": "pending",
       "priority": "Medium",
       "next": "During the review of the phase of each source."
-    },
-    {
-      "id": "T-115",
-      "phase": null,
-      "title": "Update the Official Documentation of PLT-002 to https://code.claude.com/docs",
-      "status": "pending",
-      "priority": "Low",
-      "next": "Found during R3c; it still points to https://docs.anthropic.com/."
     }
   ],
   "resources": {
@@ -656,6 +654,6 @@
   },
   "known_gaps": [
     "No platform compatibility value has been tested (T-104).",
-    "The commit that adds or updates this file cannot be recorded inside it; it is recorded in the next update (see docs/status/README.md)."
+    "A commit cannot record its own hash: the commit that updates this file is recorded in the next update (see docs/status/README.md)."
   ]
 }

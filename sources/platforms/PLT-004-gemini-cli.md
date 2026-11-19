@@ -17,7 +17,7 @@ AI-assisted development environment based on Google Gemini models for coding and
 https://github.com/google-gemini/gemini-cli
 
 ## Official Documentation
-https://github.com/google-gemini/gemini-cli
+https://geminicli.com/docs
 
 ## Category
 Platform
@@ -92,3 +92,5 @@ RPT-001
 
 ## Notes
 Previous note (before AD-5): not part of primary execution stack. Superseded by research/research-environment.md v1.1.
+
+Official Documentation previously recorded as https://github.com/google-gemini/gemini-cli (changed on 2026-11-18, T-115).

@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- `scripts/validate_status.py` — checks `docs/status/project-status.json` against the repository (standard library only).
 - `docs/status/project-status.json` — canonical project status (AD-4): phases, ADRs, reconciliation plan and discrepancies, open tasks and resource counts. `docs/status/README.md` defines its update rules and vocabularies.
 - Component Organization section in `PLT-001` to `PLT-005` (`sources/platforms/`): locations, formats, discovery rules and scope of instruction files, skills, agents and subagents, plugins or extensions, and MCP servers, from official documentation; documented, not tested (ADR-005).
 - `sources/platforms/PLT-005-cursor.md` — Cursor, the fifth target platform (ADR-005).
@@ -24,6 +25,8 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- `docs/status/project-status.json`: R3d and D-18 linked to 4e83fd9; evidence recorded for D-21 and D-22; T-115 closed. `docs/status/README.md`, `docs/architecture/repository-workflow.md` and `scripts/README.md` describe the validator.
+- PLT-002, PLT-003 and PLT-004: Official Documentation points to each platform's documentation site (T-115); the previous values are kept in Notes.
 - `docs/architecture/repository-workflow.md`: commits that change the project state also update `docs/status/project-status.json`. `README.md`: `docs/` includes the project status.
 - PLT-001: Last Review updated to 2026-11-18. PLT-005: note updated to point to its Component Organization section.
 - All 47 resource files migrated to ADR-004 and ADR-005: YAML front matter (`id`, `kind`, `research_status`, `decision`, `environment`, `evidence`), the `Status` section removed, and a Platform Compatibility matrix with every value `Not Verified` (the previous unverified ratings are kept in a "Declared" column). Adoption texts without supporting evidence are renamed "Adoption Note (recorded before ADR-004, without supporting evidence)".

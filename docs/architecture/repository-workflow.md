@@ -46,7 +46,7 @@ Next Research Phase
 | ADR Generation (when needed) | Only when the review produces a permanent architectural decision | `docs/decisions/` |
 | Knowledge Base Update | Resource files derived from the reviewed report | `sources/<category>/` |
 | Index Regeneration | Updated category indexes | `scripts/update_indexes.sh` |
-| Validation | Checks before committing: index output, internal references and recorded review status | — |
+| Validation | Checks before committing: index output, internal references, recorded review status and project status | `scripts/validate_status.py` |
 | Git Commit | Changes committed through the repository's Git Flow (feature branches merged into `develop`) | Git |
 | Next Research Phase | Next phase in roadmap order | `research/research-roadmap.md` |
 

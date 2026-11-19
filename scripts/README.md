@@ -10,8 +10,9 @@ Automation layer of the repository. Scripts only manage this repository's own st
 |--------|---------|
 | `bootstrap.sh` | Checks dependencies and creates the base directories and files of the repository. |
 | `update_indexes.sh` | Regenerates the `README.md` index table of every `sources/` category. |
+| `validate_status.py` | Checks `docs/status/project-status.json` against the repository. |
 
-Both scripts resolve every path from `scripts/lib/constants.sh` (`ROOT_DIR`), so they can be run from any working directory.
+The shell scripts resolve every path from `scripts/lib/constants.sh` (`ROOT_DIR`) and `validate_status.py` resolves it from its own location, so all of them can be run from any working directory.
 
 ---
 
@@ -20,6 +21,7 @@ Both scripts resolve every path from `scripts/lib/constants.sh` (`ROOT_DIR`), so
 ```bash
 ./scripts/bootstrap.sh
 ./scripts/update_indexes.sh
+./scripts/validate_status.py
 ```
 
 ### `bootstrap.sh`
@@ -46,6 +48,19 @@ The script is safe to re-run.
 4. Overwrites `sources/<category>/README.md` with the generated table.
 
 Only `sources/*/README.md` files are generated. Every other document, including this one, is maintained manually.
+
+### `validate_status.py`
+
+Requires `python3` (standard library only) and `git`. It checks that `docs/status/project-status.json`:
+
+1. Has every top-level key and uses the vocabularies of `docs/status/README.md`.
+2. References commits that exist, and that `based_on_commit` is an ancestor of `HEAD`.
+3. Lists the phases, names and report files of `research/research-roadmap.md`, and marks a report as present only if it exists.
+4. Lists every ADR of `docs/decisions/` with its title, status and date.
+5. Records resolved discrepancies with a commit or with evidence.
+6. Matches the resource counts computed from the front matter of `sources/<category>/*.md`.
+
+It prints `[ OK ]` and exits with 0, or prints each problem with `[FAIL]` and exits with 1. It does not modify any file.
 
 ---
 

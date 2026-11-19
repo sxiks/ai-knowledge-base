@@ -7,11 +7,13 @@
 ## Update Rules
 
 - The file is updated in the same commit as the change it describes: a phase, a review, an ADR, a reconciliation step or an open task.
-- `based_on_commit` is the commit the status was verified against, that is, the parent of the commit that updates the file. A commit cannot contain its own hash, so the commit that adds or updates this file is recorded as `null` and filled in the next update.
+- `based_on_commit` is the commit the status was verified against, that is, the parent of the commit that updates the file. A commit cannot contain its own hash, so the commit that adds or updates this file is recorded as `null` and filled in the next update. A commit that only fills in those hashes is not recorded itself.
 - Only facts that can be checked in the repository or in an approved decision are recorded. Dates come from the repository (commits, ADRs, reports); no dates are estimated.
+- A discrepancy resolved without a file change has `commit: null` and an `evidence` list that explains how it was verified.
 - Unknown values are `null`. No percentages or progress estimates are recorded.
 - A task is listed in `open_tasks` until it is completed with evidence; completed tasks are recorded in the commit history and the CHANGELOG.
 - `resources` is computed from the YAML front matter of the resource files (`sources/<category>/*.md`) and must be recomputed when they change.
+- `scripts/validate_status.py` checks the file against the repository; run it before every commit that changes the file.
 
 ---
 
