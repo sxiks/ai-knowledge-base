@@ -50,6 +50,8 @@ Next Research Phase
 | Git Commit | Changes committed through the repository's Git Flow (feature branches merged into `develop`) | Git |
 | Next Research Phase | Next phase in roadmap order | `research/research-roadmap.md` |
 
+Project status: a commit that changes the state of a phase, review, ADR, reconciliation step or open task also updates `docs/status/project-status.json` (AD-4; rules in `docs/status/README.md`).
+
 The first step was historically called "Claude Investigation". It is provider-independent: any AI-assisted research that follows the protocol qualifies.
 
 ---

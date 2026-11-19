@@ -39,7 +39,7 @@ The workflow is defined in [docs/architecture/repository-workflow.md](./docs/arc
 ## Repository Structure
 
 ```text
-docs/        Architecture, decisions (ADRs) and reviews
+docs/        Architecture, decisions (ADRs), reviews and project status
 research/    Research inputs, protocol, roadmap, reports and archives
 sources/     Knowledge base resources, one file per resource
 templates/   Reusable document templates

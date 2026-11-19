@@ -1,0 +1,661 @@
+{
+  "schema_version": "1.0",
+  "description": "Canonical project status of ai-knowledge-base (AD-4). Every summary or dashboard of the project is derived from this file. Rules and vocabularies: docs/status/README.md.",
+  "updated": "2026-11-18",
+  "based_on_commit": "e44dc31",
+  "project": {
+    "name": "ai-knowledge-base",
+    "repository": "https://github.com/sxiks/ai-knowledge-base",
+    "purpose": "Technical knowledge base to research, extract, validate and organize components of AI-assisted development ecosystems, reusable across OpenCode, Claude Code, Codex CLI, Gemini CLI and Cursor.",
+    "target_platforms": [
+      "OpenCode",
+      "Claude Code",
+      "Codex CLI",
+      "Gemini CLI",
+      "Cursor"
+    ],
+    "primary_platform": "OpenCode",
+    "platform_note": "The five platforms have the same compatibility priority; any of them may become the primary platform (AD-5).",
+    "environment_repositories": {
+      "ai-workspace": "not-created",
+      "linux-dev-workstation": null
+    },
+    "platform_setup": "out-of-scope"
+  },
+  "branches": {
+    "develop": "e44dc31",
+    "main": "6b1f84a",
+    "note": "main has not received the reconciliation commits."
+  },
+  "current_stage": {
+    "name": "Architectural reconciliation",
+    "status": "in-progress",
+    "next_step": "R4: resume Phase 2 with the architecture review of RPT-002 (T-23)."
+  },
+  "phases": [
+    {
+      "number": 1,
+      "name": "Ecosystems",
+      "report": "research/reports/RPT-001-ecosystems.md",
+      "report_present": true,
+      "status": "completed",
+      "review": [
+        "docs/reviews/RPT-001-architecture-review.md",
+        "docs/reviews/RPT-001-review.md"
+      ],
+      "decisions": [
+        "ADR-001",
+        "ADR-002",
+        "ADR-003"
+      ]
+    },
+    {
+      "number": 2,
+      "name": "Agents",
+      "report": "research/reports/RPT-002-agents.md",
+      "report_present": true,
+      "status": "review-pending",
+      "review": null,
+      "decisions": [],
+      "notes": "The report header says 'Phase 2 of 6' because it was written under roadmap v1.0."
+    },
+    {
+      "number": 3,
+      "name": "Skills",
+      "report": "research/reports/RPT-003-skills.md",
+      "report_present": false,
+      "status": "not-started",
+      "review": null,
+      "decisions": []
+    },
+    {
+      "number": 4,
+      "name": "Plugins and MCP Servers",
+      "report": "research/reports/RPT-004-plugins-mcps.md",
+      "report_present": false,
+      "status": "not-started",
+      "review": null,
+      "decisions": []
+    },
+    {
+      "number": 5,
+      "name": "Engineering Utilities, Methodologies, LSPs and Workflows",
+      "report": "research/reports/RPT-005-engineering-utilities.md",
+      "report_present": false,
+      "status": "not-started",
+      "review": null,
+      "decisions": []
+    },
+    {
+      "number": 6,
+      "name": "Additional References",
+      "report": "research/reports/RPT-006-additional-references.md",
+      "report_present": false,
+      "status": "not-started",
+      "review": null,
+      "decisions": []
+    },
+    {
+      "number": 7,
+      "name": "Final Consolidation",
+      "report": "research/reports/RPT-999-final-recommendation.md",
+      "report_present": false,
+      "status": "not-started",
+      "review": null,
+      "decisions": []
+    }
+  ],
+  "decisions": [
+    {
+      "id": "ADR-001",
+      "title": "Adopt Superpowers as the Primary Engineering Methodology",
+      "status": "accepted",
+      "date": "2026-07-02",
+      "file": "docs/decisions/ADR-001-primary-ecosystem.md"
+    },
+    {
+      "id": "ADR-002",
+      "title": "Adopt ECC as a Curated Component Library",
+      "status": "accepted",
+      "date": "2026-07-02",
+      "file": "docs/decisions/ADR-002-selective-ecc-adoption.md"
+    },
+    {
+      "id": "ADR-003",
+      "title": "Use GStack as a Knowledge Reference Only",
+      "status": "accepted",
+      "date": "2026-07-02",
+      "file": "docs/decisions/ADR-003-gstack-reference-only.md"
+    },
+    {
+      "id": "ADR-004",
+      "title": "Resource Lifecycle and Status Vocabulary",
+      "status": "accepted",
+      "date": "2026-11-13",
+      "file": "docs/decisions/ADR-004-resource-lifecycle.md"
+    },
+    {
+      "id": "ADR-005",
+      "title": "Multi-Platform Component Model",
+      "status": "accepted",
+      "date": "2026-11-13",
+      "file": "docs/decisions/ADR-005-multi-platform-component-model.md"
+    }
+  ],
+  "reconciliation": {
+    "started": "2026-11-13",
+    "status": "in-progress",
+    "plan": [
+      {
+        "id": "R0",
+        "title": "Pending information",
+        "status": "completed",
+        "commits": []
+      },
+      {
+        "id": "R1",
+        "title": "Approval of decisions AD-1 to AD-6",
+        "status": "completed",
+        "commits": []
+      },
+      {
+        "id": "R2",
+        "title": "Corrections allowed by previous decisions",
+        "status": "completed",
+        "commits": [
+          "267eeaf"
+        ]
+      },
+      {
+        "id": "R3a",
+        "title": "ADR-004, ADR-005 and research documents",
+        "status": "completed",
+        "commits": [
+          "9f4f25e"
+        ]
+      },
+      {
+        "id": "R3b",
+        "title": "Resource template, migration of the resource files and Cursor platform",
+        "status": "completed",
+        "commits": [
+          "5dca544",
+          "52bf26e"
+        ]
+      },
+      {
+        "id": "R3c",
+        "title": "Component organization per platform",
+        "status": "completed",
+        "commits": [
+          "e44dc31"
+        ]
+      },
+      {
+        "id": "R3d",
+        "title": "Canonical project status file",
+        "status": "completed",
+        "commits": [
+          null
+        ]
+      },
+      {
+        "id": "R4",
+        "title": "Resume Phase 2",
+        "status": "not-started",
+        "commits": []
+      }
+    ],
+    "approvals": [
+      {
+        "id": "AD-1",
+        "title": "Seven-phase research roadmap",
+        "status": "approved",
+        "date": "2026-11-13"
+      },
+      {
+        "id": "AD-2",
+        "title": "Resource lifecycle and status vocabulary (ADR-004)",
+        "status": "approved",
+        "date": "2026-11-13"
+      },
+      {
+        "id": "AD-3",
+        "title": "Multi-platform component model (ADR-005); component organization documented per platform, without platform setup",
+        "status": "approved",
+        "date": "2026-11-13"
+      },
+      {
+        "id": "AD-4",
+        "title": "Canonical project status file; local HTML dashboard deferred",
+        "status": "approved",
+        "date": "2026-11-13"
+      },
+      {
+        "id": "AD-5",
+        "title": "Five target platforms with the same compatibility priority; OpenCode is the current primary platform",
+        "status": "approved",
+        "date": "2026-11-13"
+      },
+      {
+        "id": "AD-6",
+        "title": "ADR-002 limits apply to adoption; the desired end state belongs to the environment repositories; weighted evaluation criteria as the KES",
+        "status": "approved",
+        "date": "2026-11-13"
+      }
+    ],
+    "discrepancies": [
+      {
+        "id": "D-01",
+        "severity": "Critical",
+        "title": "'Active' status mixes documented, installed and adopted",
+        "status": "resolved",
+        "resolved_in": {
+          "step": "R3b",
+          "commit": "5dca544"
+        },
+        "approval": "AD-2"
+      },
+      {
+        "id": "D-02",
+        "severity": "High",
+        "title": "Conceptual components presented as real components",
+        "status": "resolved",
+        "resolved_in": {
+          "step": "R3b",
+          "commit": "5dca544"
+        },
+        "approval": "AD-2",
+        "follow_up": [
+          "T-114"
+        ]
+      },
+      {
+        "id": "D-03",
+        "severity": "High",
+        "title": "Three different phase distributions",
+        "status": "resolved",
+        "resolved_in": {
+          "step": "R3a",
+          "commit": "9f4f25e"
+        },
+        "approval": "AD-1"
+      },
+      {
+        "id": "D-04",
+        "severity": "High",
+        "title": "RPT-002 outside the repository and without review",
+        "status": "resolved",
+        "resolved_in": {
+          "step": "R2",
+          "commit": "267eeaf"
+        },
+        "follow_up": [
+          "T-23"
+        ]
+      },
+      {
+        "id": "D-05",
+        "severity": "High",
+        "title": "Multi-platform goal not reflected in the structure",
+        "status": "resolved",
+        "resolved_in": {
+          "step": "R3c",
+          "commit": "e44dc31"
+        },
+        "approval": "AD-3",
+        "follow_up": [
+          "T-104"
+        ]
+      },
+      {
+        "id": "D-06",
+        "severity": "Medium",
+        "title": "Duplicated concepts across resource files",
+        "status": "resolved",
+        "resolved_in": {
+          "step": "R3b",
+          "commit": "52bf26e"
+        },
+        "follow_up": [
+          "Relation type to be set during each phase review"
+        ]
+      },
+      {
+        "id": "D-07",
+        "severity": "Medium",
+        "title": "Corrupted scripts/README.md",
+        "status": "resolved",
+        "resolved_in": {
+          "step": "R2",
+          "commit": "267eeaf"
+        }
+      },
+      {
+        "id": "D-08",
+        "severity": "Medium",
+        "title": "Seven different descriptions of the workflow",
+        "status": "resolved",
+        "resolved_in": {
+          "step": "R2",
+          "commit": "267eeaf"
+        }
+      },
+      {
+        "id": "D-09",
+        "severity": "Medium",
+        "title": "Doubtful repository URLs",
+        "status": "resolved",
+        "resolved_in": {
+          "step": "R2",
+          "commit": "267eeaf"
+        }
+      },
+      {
+        "id": "D-10",
+        "severity": "Medium",
+        "title": "MCP servers without phase or sources",
+        "status": "resolved",
+        "resolved_in": {
+          "step": "R3a",
+          "commit": "9f4f25e"
+        },
+        "approval": "AD-1"
+      },
+      {
+        "id": "D-11",
+        "severity": "Medium",
+        "title": "Platform priority not recorded",
+        "status": "resolved",
+        "resolved_in": {
+          "step": "R3b",
+          "commit": "52bf26e"
+        },
+        "approval": "AD-5"
+      },
+      {
+        "id": "D-12",
+        "severity": "Informational",
+        "title": "ADR-002 and research-goals v2.0: different scope, not a contradiction",
+        "status": "resolved",
+        "resolved_in": {
+          "step": "R3a",
+          "commit": "9f4f25e"
+        },
+        "approval": "AD-6"
+      },
+      {
+        "id": "D-13",
+        "severity": "Low",
+        "title": "Two reviews of RPT-001",
+        "status": "resolved",
+        "resolved_in": {
+          "step": "R2",
+          "commit": "267eeaf"
+        }
+      },
+      {
+        "id": "D-14",
+        "severity": "Low",
+        "title": "Conventions not followed",
+        "status": "resolved",
+        "resolved_in": {
+          "step": "R3b",
+          "commit": "5dca544"
+        }
+      },
+      {
+        "id": "D-15",
+        "severity": "Low",
+        "title": "Outdated structure documentation",
+        "status": "resolved",
+        "resolved_in": {
+          "step": "R2",
+          "commit": "267eeaf"
+        }
+      },
+      {
+        "id": "D-16",
+        "severity": "Medium",
+        "title": "bootstrap.sh deletes .gitignore and depends on the current directory",
+        "status": "resolved",
+        "resolved_in": {
+          "step": "R2",
+          "commit": "267eeaf"
+        }
+      },
+      {
+        "id": "D-17",
+        "severity": "Low",
+        "title": "Placeholder in the catalog",
+        "status": "resolved",
+        "resolved_in": {
+          "step": "R3b",
+          "commit": "5dca544"
+        },
+        "approval": "AD-2"
+      },
+      {
+        "id": "D-18",
+        "severity": "Medium",
+        "title": "Project tracking kept outside the repository",
+        "status": "resolved",
+        "resolved_in": {
+          "step": "R3d",
+          "commit": null
+        },
+        "approval": "AD-4"
+      },
+      {
+        "id": "D-19",
+        "severity": "Informational",
+        "title": "'Desired End State' describes the workstation",
+        "status": "resolved",
+        "resolved_in": {
+          "step": "R3a",
+          "commit": "9f4f25e"
+        },
+        "approval": "AD-6"
+      },
+      {
+        "id": "D-20",
+        "severity": "Informational",
+        "title": "Weighted evaluation criteria not used",
+        "status": "resolved",
+        "resolved_in": {
+          "step": "R3a",
+          "commit": "9f4f25e"
+        },
+        "approval": "AD-6"
+      },
+      {
+        "id": "D-21",
+        "severity": "Medium",
+        "title": "Status of ai-workspace unknown",
+        "status": "resolved",
+        "resolved_in": {
+          "step": "R0",
+          "commit": null
+        }
+      },
+      {
+        "id": "D-22",
+        "severity": "Informational",
+        "title": "Local and remote divergence unknown",
+        "status": "resolved",
+        "resolved_in": {
+          "step": "R0",
+          "commit": null
+        }
+      }
+    ]
+  },
+  "open_tasks": [
+    {
+      "id": "T-20",
+      "phase": 2,
+      "title": "Research the seven agent sources (RPT-002)",
+      "status": "needs-review",
+      "priority": "High",
+      "next": "Architecture review (T-23)."
+    },
+    {
+      "id": "T-23",
+      "phase": 2,
+      "title": "Architecture review of RPT-002",
+      "status": "pending",
+      "priority": "High",
+      "next": "Next step (R4), using the KES, ADR-004 and ADR-005."
+    },
+    {
+      "id": "T-24",
+      "phase": 2,
+      "title": "ADRs derived from Phase 2, if the review requires them",
+      "status": "pending",
+      "priority": "High",
+      "next": "After T-23."
+    },
+    {
+      "id": "T-25",
+      "phase": 2,
+      "title": "Update sources/agents/ from the reviewed RPT-002",
+      "status": "pending",
+      "priority": "High",
+      "next": "After T-23."
+    },
+    {
+      "id": "T-26",
+      "phase": 2,
+      "title": "Regenerate indexes, validate and commit the Phase 2 closure",
+      "status": "pending",
+      "priority": "High",
+      "next": "After T-25."
+    },
+    {
+      "id": "T-30",
+      "phase": 3,
+      "title": "Research the Phase 3 sources (RPT-003)",
+      "status": "pending",
+      "priority": "High",
+      "next": "After Phase 2 closes."
+    },
+    {
+      "id": "T-40",
+      "phase": 4,
+      "title": "Research plugins and MCP servers (RPT-004)",
+      "status": "pending",
+      "priority": "Medium",
+      "next": "After Phase 3 closes."
+    },
+    {
+      "id": "T-50",
+      "phase": 5,
+      "title": "Research engineering utilities, methodologies, LSPs and workflows (RPT-005)",
+      "status": "pending",
+      "priority": "Medium",
+      "next": "After Phase 4 closes."
+    },
+    {
+      "id": "T-60",
+      "phase": 6,
+      "title": "Research the additional references (RPT-006)",
+      "status": "pending",
+      "priority": "Low",
+      "next": "After Phase 5 closes."
+    },
+    {
+      "id": "T-70",
+      "phase": 7,
+      "title": "Final recommendation per platform (RPT-999)",
+      "status": "pending",
+      "priority": "Medium",
+      "next": "After Phase 6 closes."
+    },
+    {
+      "id": "T-89",
+      "phase": null,
+      "title": "Re-verify research/research-environment.md before the next research cycle",
+      "status": "needs-validation",
+      "priority": "Medium",
+      "next": "The installed list has not been re-verified since 2026-07-02."
+    },
+    {
+      "id": "T-91",
+      "phase": null,
+      "title": "Implementation in ai-workspace",
+      "status": "deferred",
+      "priority": null,
+      "next": "Outside this repository; ai-workspace is not created."
+    },
+    {
+      "id": "T-103",
+      "phase": null,
+      "title": "Local HTML dashboard in the repository",
+      "status": "deferred",
+      "priority": "Low",
+      "next": "Deferred by AD-4."
+    },
+    {
+      "id": "T-104",
+      "phase": null,
+      "title": "Real compatibility tests per platform",
+      "status": "pending",
+      "priority": "Medium",
+      "next": "Requires a test environment; ai-workspace is not created."
+    },
+    {
+      "id": "T-114",
+      "phase": null,
+      "title": "Record the source section of the 19 conceptual-pattern resources",
+      "status": "pending",
+      "priority": "Medium",
+      "next": "During the review of the phase of each source."
+    },
+    {
+      "id": "T-115",
+      "phase": null,
+      "title": "Update the Official Documentation of PLT-002 to https://code.claude.com/docs",
+      "status": "pending",
+      "priority": "Low",
+      "next": "Found during R3c; it still points to https://docs.anthropic.com/."
+    }
+  ],
+  "resources": {
+    "computed_from": "YAML front matter of sources/<category>/*.md",
+    "total": 48,
+    "by_category": {
+      "agents": 9,
+      "ecosystems": 4,
+      "mcps": 11,
+      "methodologies": 3,
+      "platforms": 5,
+      "plugins": 2,
+      "skills": 7,
+      "utilities": 5,
+      "workflows": 2
+    },
+    "by_research_status": {
+      "extracted": 45,
+      "reviewed": 3
+    },
+    "by_decision": {
+      "adopted": 1,
+      "candidate": 45,
+      "reference": 1,
+      "selective": 1
+    },
+    "by_kind": {
+      "component": 29,
+      "conceptual-pattern": 19
+    },
+    "by_environment": {
+      "installed": 8,
+      "unknown": 40
+    },
+    "compatibility_note": "Every Platform Compatibility value is Not Verified, except Native for a platform's own resource file (ADR-005)."
+  },
+  "known_gaps": [
+    "No platform compatibility value has been tested (T-104).",
+    "The commit that adds or updates this file cannot be recorded inside it; it is recorded in the next update (see docs/status/README.md)."
+  ]
+}
