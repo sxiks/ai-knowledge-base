@@ -4,7 +4,7 @@
 AI coding environment used for agent-assisted development and research execution.
 
 ## Repository
-https://www.anthropic.com/ (product-level reference)
+https://github.com/anthropics/claude-code
 
 ## Official Documentation
 https://docs.anthropic.com/

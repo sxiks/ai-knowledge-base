@@ -36,9 +36,21 @@ Language Server Protocol integrations.
 
 Supporting tools.
 
+## Workflows
+
+Sequences of tasks and processes.
+
 ## Methodologies
 
 Engineering methodologies.
+
+## Prompts
+
+Reusable prompts and prompt patterns.
+
+## References
+
+Additional technical references and documentation.
 
 ## Learning Resources
 

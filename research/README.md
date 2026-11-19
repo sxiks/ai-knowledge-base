@@ -12,21 +12,9 @@ It is the workspace used during investigation.
 
 ## Workflow
 
-```text
-Research Sources
-        │
-        ▼
-Prompt B
-        │
-        ▼
-Technical Report
-        │
-        ▼
-Manual Review
-        │
-        ▼
-Knowledge Base (sources/)
-```
+Research inputs are processed with `research-protocol.md` (Prompt B). Each phase produces a report in `reports/`, which is then reviewed in `docs/reviews/` before updating `sources/`.
+
+See [docs/architecture/repository-workflow.md](../docs/architecture/repository-workflow.md) for the canonical workflow.
 
 ---
 
@@ -36,9 +24,11 @@ Knowledge Base (sources/)
 research/
 
 README.md
-prompt-b.md
 research-context.md
 research-environment.md
+research-goals.md
+research-protocol.md
+research-roadmap.md
 research-sources.md
 
 reports/
@@ -61,15 +51,27 @@ Current workstation state.
 
 ---
 
+### research-goals.md
+
+Mission, research philosophy and selection policy.
+
+---
+
 ### research-sources.md
 
 Repositories and documentation to investigate.
 
 ---
 
-### prompt-b.md
+### research-protocol.md
 
-Prompt used to perform technical research.
+Prompt B — protocol used to perform technical research. Replaces the former `prompt-a.md` and `prompt-b.md` (commit `67b8f7f`).
+
+---
+
+### research-roadmap.md
+
+Order of the research phases and their expected reports.
 
 ---
 

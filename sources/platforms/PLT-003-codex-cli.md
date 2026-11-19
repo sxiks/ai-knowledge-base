@@ -4,10 +4,10 @@
 CLI-based AI coding assistant designed for code generation and automation workflows.
 
 ## Repository
-https://platform.openai.com/
+https://github.com/openai/codex
 
 ## Official Documentation
-https://platform.openai.com/docs
+https://github.com/openai/codex
 
 ## Category
 Platform

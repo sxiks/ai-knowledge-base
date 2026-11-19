@@ -4,10 +4,10 @@
 MCP server providing contextual retrieval and structured context injection for AI coding workflows.
 
 ## Repository
-https://github.com/context7/context7
+https://github.com/upstash/context7
 
 ## Official Documentation
-https://github.com/context7/context7
+https://github.com/upstash/context7
 
 ## Category
 MCP

@@ -37,21 +37,9 @@ workflows/
 
 ## Research Workflow
 
-```text
-Discover
-    │
-Collect
-    │
-Classify
-    │
-Analyze
-    │
-Compare
-    │
-Decide
-    │
-Implement
-```
+Each resource follows the Resource Lifecycle (Discover → Collect → Classify → Analyze → Compare → Decide → Implement). Resources are created or updated in the Knowledge Base Update step, after the related report has been reviewed.
+
+See [docs/architecture/repository-workflow.md](../docs/architecture/repository-workflow.md) for the canonical workflow.
 
 ---
 

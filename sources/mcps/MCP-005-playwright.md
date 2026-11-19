@@ -4,10 +4,10 @@
 Automation MCP enabling browser-based testing and interaction workflows.
 
 ## Repository
-https://github.com/microsoft/playwright
+https://github.com/microsoft/playwright-mcp
 
 ## Official Documentation
-https://playwright.dev/
+https://github.com/microsoft/playwright-mcp
 
 ## Category
 MCP

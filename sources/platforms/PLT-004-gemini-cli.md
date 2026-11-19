@@ -4,10 +4,10 @@
 AI-assisted development environment based on Google Gemini models for coding and reasoning tasks.
 
 ## Repository
-https://ai.google.dev/
+https://github.com/google-gemini/gemini-cli
 
 ## Official Documentation
-https://ai.google.dev/docs
+https://github.com/google-gemini/gemini-cli
 
 ## Category
 Platform

@@ -28,7 +28,7 @@ create_missing_directories() {
 
     for directory in "${directories[@]}"
     do
-        mkdir -p "$directory"
+        mkdir -p "${ROOT_DIR}/${directory}"
 
         log_success "$directory"
     done
@@ -51,7 +51,7 @@ create_missing_files() {
 
     for file in "${files[@]}"
     do
-        touch "$file"
+        touch "${ROOT_DIR}/${file}"
 
         log_success "$file"
     done

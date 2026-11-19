@@ -4,10 +4,10 @@
 Reasoning MCP that enhances structured step-by-step problem solving in AI workflows.
 
 ## Repository
-https://github.com/
+https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking
 
 ## Official Documentation
-N/A
+https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking
 
 ## Category
 MCP

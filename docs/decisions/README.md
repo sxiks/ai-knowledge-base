@@ -24,20 +24,6 @@ The ADRs represent the official source of truth for architectural decisions.
 
 ## Workflow
 
-Research Report
+ADRs are created in the 'ADR Generation (when needed)' step of the Phase Execution Workflow.
 
-↓
-
-Architecture Review
-
-↓
-
-ADR
-
-↓
-
-Knowledge Base Update
-
-↓
-
-Implementation
+See [docs/architecture/repository-workflow.md](../architecture/repository-workflow.md) for the canonical workflow.

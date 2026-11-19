@@ -28,40 +28,25 @@ Only resources that pass the evaluation process should eventually be implemented
 
 ## Repository Workflow
 
-```text
-Internet
-      │
-      ▼
-Research Sources
-      │
-      ▼
-Classification
-      │
-      ▼
-AI Analysis
-      │
-      ▼
-Comparison
-      │
-      ▼
-Technical Decision
-      │
-      ▼
-Implementation
-```
+The workflow is defined in [docs/architecture/repository-workflow.md](./docs/architecture/repository-workflow.md). It has three levels:
+
+1. **Phase Execution Workflow** — Investigation → Research Report → Architecture Review → ADR (when needed) → Knowledge Base Update → Index Regeneration → Validation → Git Commit.
+2. **Project Lifecycle** — from research to environment adoption, as defined in `research/research-goals.md`.
+3. **Resource Lifecycle** — Discover → Collect → Classify → Analyze → Compare → Decide → Implement.
 
 ---
 
 ## Repository Structure
 
 ```text
-docs/
-sources/
-templates/
-scripts/
-archive/
-assets/
+docs/        Architecture, decisions (ADRs) and reviews
+research/    Research inputs, protocol, roadmap, reports and archives
+sources/     Knowledge base resources, one file per resource
+templates/   Reusable document templates
+scripts/     Repository automation (bootstrap, index generation)
 ```
+
+`scripts/bootstrap.sh` also creates `archive/` and `assets/` locally. They are not tracked by Git while empty.
 
 ---
 
@@ -109,13 +94,7 @@ Reusable templates used across the repository.
 
 ## Research Process
 
-1. Discover
-2. Collect
-3. Classify
-4. Analyze
-5. Compare
-6. Decide
-7. Implement
+Research follows the Phase Execution Workflow and the order defined in `research/research-roadmap.md`.
 
 ---
 

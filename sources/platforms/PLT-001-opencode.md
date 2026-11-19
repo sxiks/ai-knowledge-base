@@ -4,10 +4,10 @@
 Primary AI-native development environment used for agent-based coding workflows.
 
 ## Repository
-N/A (internal tool)
+https://github.com/anomalyco/opencode (https://github.com/sst/opencode resolves to the same repository)
 
 ## Official Documentation
-N/A
+https://opencode.ai/docs
 
 ## Category
 Platform

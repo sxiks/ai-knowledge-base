@@ -4,7 +4,7 @@
 MCP integration layer for interacting with GitHub repositories, issues and workflows.
 
 ## Repository
-https://github.com/github
+https://github.com/github/github-mcp-server
 
 ## Official Documentation
 https://docs.github.com/
