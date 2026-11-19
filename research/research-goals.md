@@ -1,8 +1,8 @@
 # Research Goals
 
-Version: v2.0
+Version: v2.1
 
-Last Updated: 2026-07-03
+Last Updated: 2026-11-18
 
 ---
 
@@ -56,6 +56,8 @@ There are no predefined numerical limits for:
 - Engineering resources
 
 Every resource that provides meaningful technical value should be documented.
+
+Numerical limits stated in an ADR (for example, ADR-002) apply to adoption, not to research or documentation.
 
 ---
 

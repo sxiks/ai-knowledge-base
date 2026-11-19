@@ -5,8 +5,8 @@
 
 ---
 
-Version: v1.0
-Last Updated: 2026-07-02
+Version: v1.1
+Last Updated: 2026-11-18
 
 ---
 
@@ -49,8 +49,9 @@ Current primary platform:
 
 - OpenCode
 
-Future platforms to support:
+Target platforms (same compatibility priority; any of them may become the primary platform):
 
+- OpenCode
 - Claude Code
 - Codex CLI
 - Gemini CLI
@@ -192,6 +193,60 @@ Priority: High
 Repository
 
 https://github.com/thedotmack/claude-mem
+
+---
+
+# MCP Servers
+
+Baseline: MCP servers already installed in the workstation (`research-environment.md`). Additional MCP sources are added here before Phase 4 starts.
+
+## Context7
+
+Repository
+
+https://github.com/upstash/context7
+
+---
+
+## GitHub MCP Server
+
+Repository
+
+https://github.com/github/github-mcp-server
+
+---
+
+## Playwright MCP
+
+Repository
+
+https://github.com/microsoft/playwright-mcp
+
+---
+
+## Sequential Thinking
+
+Repository
+
+https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking
+
+---
+
+## Filesystem
+
+Repository
+
+https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem
+
+Notes
+
+Installed with an open issue (`research-environment.md`).
+
+---
+
+## Engran
+
+Custom MCP (`research-environment.md`). Repository not documented.
 
 ---
 
@@ -387,7 +442,7 @@ Extract all referenced repositories and compare them against existing resources.
 
 https://developers.openai.com/api/reference/overview
 
-Research features that may improve OpenCode workflows.
+Research features that may improve AI coding workflows on the target platforms.
 
 ---
 

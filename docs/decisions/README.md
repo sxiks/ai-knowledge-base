@@ -19,6 +19,8 @@ The ADRs represent the official source of truth for architectural decisions.
 | ADR-001 | Primary Engineering Methodology | Accepted |
 | ADR-002 | Selective ECC Adoption | Accepted |
 | ADR-003 | GStack Reference Only | Accepted |
+| ADR-004 | [Resource Lifecycle and Status Vocabulary](./ADR-004-resource-lifecycle.md) | Accepted |
+| ADR-005 | [Multi-Platform Component Model](./ADR-005-multi-platform-component-model.md) | Accepted |
 
 ---
 

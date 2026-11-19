@@ -8,8 +8,8 @@ Recommendations should avoid unnecessary duplication and should integrate natura
 
 ---
 
-Version: v1.0
-Last Updated: 2026-07-02
+Version: v1.1
+Last Updated: 2026-11-18
 
 ---
 
@@ -76,12 +76,15 @@ Current interests
 
 # AI Platforms
 
-## Primary Platform
+## Current Primary Platform
 
 - OpenCode
 
-## Planned Platforms
+## Target Platforms
 
+All five platforms are compatibility targets with the same priority. Any of them may become the primary platform (decision AD-5, 2026-11-13; see ADR-005).
+
+- OpenCode
 - Claude Code
 - Codex CLI
 - Gemini CLI
@@ -188,6 +191,7 @@ Responsible for:
 - Tool evaluation
 - Architecture decisions
 - Documentation
+- Component organization of each AI platform (documentation only; no platform setup)
 
 ---
 
@@ -195,12 +199,16 @@ Responsible for:
 
 ### ai-workspace
 
+Not created yet (confirmed on 2026-11-13).
+
 Responsible for:
 
 - OpenCode configuration
 - Claude Code configuration
 - Codex CLI configuration
 - Gemini CLI configuration
+- Cursor configuration
+- Platform adapters (ADR-005)
 - Shared agents
 - Shared skills
 - Shared MCPs
@@ -274,11 +282,10 @@ The objective is **not** to discover every available tool.
 
 The objective is to build a high-quality AI ecosystem that:
 
-- Integrates naturally with OpenCode.
-- Can later support Claude Code, Codex CLI, Gemini CLI and Cursor.
+- Works across the five target platforms, with OpenCode as the current primary platform.
 - Is modular.
 - Is reproducible.
-- Can be automatically installed through a bootstrap process.
+- Can be automatically installed through a bootstrap process (implemented in `ai-workspace`, not in this repository).
 - Maximizes productivity while minimizing maintenance.
 
 ---
@@ -306,5 +313,7 @@ A smaller, well-integrated ecosystem is preferred over a large collection of ove
 # Notes
 
 This document should be updated before every new research cycle.
+
+The installed components listed above were last verified on 2026-07-02. Version v1.1 only updates platform priorities and repository responsibilities.
 
 Its purpose is to inform the AI about the current workstation state so recommendations are personalized and avoid unnecessary duplication.
