@@ -1,3 +1,13 @@
+---
+id: UTL-001
+kind: component
+research_status: extracted
+decision: candidate
+environment: unknown
+evidence:
+  - "https://github.com/microsoft/markitdown"
+---
+
 # MarkItDown
 
 ## Summary
@@ -12,9 +22,6 @@ https://github.com/microsoft/markitdown
 ## Category
 Utilities
 
-## Status
-Active
-
 ## Priority
 Medium
 
@@ -27,12 +34,17 @@ Standardize document transformation into Markdown for knowledge base ingestion.
 - Content normalization
 - Multi-format support
 
-## Compatibility
-- OpenCode: High
-- Claude Code: High
-- Codex CLI: Medium
-- Gemini CLI: Medium
-- Cursor: High
+## Platform Compatibility
+
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | High |
+| Claude Code | Not Verified | — | High |
+| Codex CLI | Not Verified | — | Medium |
+| Gemini CLI | Not Verified | — | Medium |
+| Cursor | Not Verified | — | High |
 
 ## Advantages
 - Improves documentation consistency
@@ -52,7 +64,7 @@ Documentation processing utility
 ## Recommended Usage
 Use for converting external documentation into knowledge base format
 
-## Adoption Decision
+## Adoption Note (recorded before ADR-004, without supporting evidence)
 Approved
 
 ## Related ADRs

@@ -1,3 +1,13 @@
+---
+id: MET-001
+kind: component
+research_status: extracted
+decision: candidate
+environment: unknown
+evidence:
+  - "https://github.com/obra/superpowers (section not documented)"
+---
+
 # Spec-Driven Development
 
 ## Summary
@@ -15,10 +25,6 @@ https://github.com/obra/superpowers
 ## Category
 
 Methodology
-
-## Status
-
-Active
 
 ## Priority
 
@@ -56,15 +62,17 @@ Validation
 Documentation
 ```
 
-## Compatibility
+## Platform Compatibility
 
-| Platform | Support |
-|----------|---------|
-| OpenCode | Full |
-| Claude Code | Full |
-| Codex CLI | Full |
-| Gemini CLI | Full |
-| Cursor | Full |
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | Full |
+| Claude Code | Not Verified | — | Full |
+| Codex CLI | Not Verified | — | Full |
+| Gemini CLI | Not Verified | — | Full |
+| Cursor | Not Verified | — | Full |
 
 ## Advantages
 
@@ -90,7 +98,7 @@ Primary engineering methodology.
 
 Apply to every implementation cycle.
 
-## Adoption Decision
+## Adoption Note (recorded before ADR-004, without supporting evidence)
 
 Adopted.
 

@@ -24,13 +24,14 @@ Verify:
 
 Every resource must include:
 
-- ID
-- Title
+- YAML front matter with the fields of ADR-004 (`id`, `kind`, `research_status`, `decision`, `environment`, `evidence`)
+- Title (first heading)
+- Summary
 - Category
 - Priority
-- Compatibility
-- Tags
-- Description
+- Platform Compatibility, as defined in ADR-005
+
+Use `templates/resources/resource-template.md`.
 
 ---
 

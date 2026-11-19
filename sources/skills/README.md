@@ -11,7 +11,6 @@
 | SKL-005 | [Context Compression Skill](./SKL-005-context-compression.md) | Skill for reducing large context into high-density, relevant representations. |
 | SKL-006 | [Caveman Skills](./SKL-006-caveman.md) | Minimalistic AI skill framework focused on simplified reasoning and execution workflows. |
 | SKL-007 | [Prompt Master Skills](./SKL-007-prompt-master.md) | Prompt engineering framework and skill collection focused on structured prompting methodologies. |
-| SKL-008 | [Skill Placeholder 004](./SKL-008-placeholder.md) | Reserved entry for next validated skill. |
 
 ---
 

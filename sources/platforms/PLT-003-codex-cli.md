@@ -1,3 +1,13 @@
+---
+id: PLT-003
+kind: component
+research_status: extracted
+decision: candidate
+environment: unknown
+evidence:
+  - "https://github.com/openai/codex"
+---
+
 # Codex CLI
 
 ## Summary
@@ -12,9 +22,6 @@ https://github.com/openai/codex
 ## Category
 Platform
 
-## Status
-Evaluated
-
 ## Priority
 Medium
 
@@ -26,12 +33,17 @@ Optional AI coding assistant for automation and auxiliary development tasks.
 - API-driven workflow integration
 - Automation support
 
-## Compatibility
-- OpenCode: Medium
-- Claude Code: Medium
-- Codex CLI: Native
-- Gemini CLI: Medium
-- Cursor: Medium
+## Platform Compatibility
+
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | Medium |
+| Claude Code | Not Verified | — | Medium |
+| Codex CLI | Native | Platform resource (self) | Native |
+| Gemini CLI | Not Verified | — | Medium |
+| Cursor | Not Verified | — | Medium |
 
 ## Advantages
 - Strong API ecosystem
@@ -50,7 +62,7 @@ Auxiliary automation tool
 ## Recommended Usage
 Use for scripting and automation tasks when needed
 
-## Adoption Decision
+## Adoption Note (recorded before ADR-004, without supporting evidence)
 Optional
 
 ## Related ADRs

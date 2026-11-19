@@ -1,3 +1,12 @@
+---
+id: AGT-009
+kind: conceptual-pattern
+research_status: extracted
+decision: candidate
+environment: unknown
+evidence: []  # source section not documented (ADR-004, D-02)
+---
+
 # Validation Agent
 
 ## Summary
@@ -5,9 +14,6 @@ Agent responsible for verifying correctness, constraints, and system rules compl
 
 ## Category
 Agents
-
-## Status
-Extracted
 
 ## Priority
 High
@@ -32,12 +38,17 @@ Ensure output validity against rules engine and specifications.
 ## Workflow Role
 Quality assurance layer
 
-## Compatibility
-- OpenCode: High
-- Claude Code: High
-- Codex CLI: Medium
-- Gemini CLI: Medium
-- Cursor: High
+## Platform Compatibility
+
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | High |
+| Claude Code | Not Verified | — | High |
+| Codex CLI | Not Verified | — | Medium |
+| Gemini CLI | Not Verified | — | Medium |
+| Cursor | Not Verified | — | High |
 
 ## Notes
 ECC validation core component.

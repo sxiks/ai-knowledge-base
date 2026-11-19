@@ -1,3 +1,13 @@
+---
+id: SKL-001
+kind: component
+research_status: extracted
+decision: candidate
+environment: unknown
+evidence:
+  - "https://github.com/multica-ai/andrej-karpathy-skills"
+---
+
 # Karpathy Skills (Multica Collection)
 
 ## Summary
@@ -12,9 +22,6 @@ https://github.com/multica-ai/andrej-karpathy-skills
 ## Category
 Skills
 
-## Status
-Active
-
 ## Priority
 High
 
@@ -27,12 +34,17 @@ Provide reusable skill templates for structured AI-assisted development workflow
 - Prompt-based execution strategies
 - Modular skill design
 
-## Compatibility
-- OpenCode: High
-- Claude Code: High
-- Codex CLI: Medium
-- Gemini CLI: Medium
-- Cursor: High
+## Platform Compatibility
+
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | High |
+| Claude Code | Not Verified | — | High |
+| Codex CLI | Not Verified | — | Medium |
+| Gemini CLI | Not Verified | — | Medium |
+| Cursor | Not Verified | — | High |
 
 ## Advantages
 - High adaptability across platforms
@@ -52,7 +64,7 @@ Core skill library
 ## Recommended Usage
 Use as base template for creating custom skills
 
-## Adoption Decision
+## Adoption Note (recorded before ADR-004, without supporting evidence)
 Approved for integration
 
 ## Related ADRs

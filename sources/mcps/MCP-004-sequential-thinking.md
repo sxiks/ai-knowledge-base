@@ -1,3 +1,14 @@
+---
+id: MCP-004
+kind: component
+research_status: extracted
+decision: candidate
+environment: installed
+evidence:
+  - "https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking"
+  - "research/research-environment.md · Installed MCP Servers"
+---
+
 # Sequential Thinking MCP
 
 ## Summary
@@ -12,9 +23,6 @@ https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking
 ## Category
 MCP
 
-## Status
-Active
-
 ## Priority
 High
 
@@ -27,12 +35,17 @@ Improve structured reasoning and decomposition of complex tasks.
 - Structured thought processes
 - Multi-stage problem solving
 
-## Compatibility
-- OpenCode: High
-- Claude Code: High
-- Codex CLI: Medium
-- Gemini CLI: Medium
-- Cursor: High
+## Platform Compatibility
+
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | High |
+| Claude Code | Not Verified | — | High |
+| Codex CLI | Not Verified | — | Medium |
+| Gemini CLI | Not Verified | — | Medium |
+| Cursor | Not Verified | — | High |
 
 ## Advantages
 - Improves reasoning quality
@@ -52,7 +65,7 @@ Reasoning augmentation MCP
 ## Recommended Usage
 Use for complex multi-step reasoning tasks
 
-## Adoption Decision
+## Adoption Note (recorded before ADR-004, without supporting evidence)
 Approved
 
 ## Related ADRs

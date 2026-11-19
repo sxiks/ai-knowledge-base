@@ -1,3 +1,13 @@
+---
+id: AGT-007
+kind: component
+research_status: extracted
+decision: candidate
+environment: installed
+evidence:
+  - "research/research-environment.md · Installed Agents"
+---
+
 # QA Architect Agent
 
 ## Summary
@@ -12,9 +22,6 @@ N/A
 ## Category
 Agents
 
-## Status
-Active
-
 ## Priority
 High
 
@@ -27,12 +34,17 @@ Ensure outputs meet quality, consistency and architectural standards.
 - Output verification
 - Consistency enforcement
 
-## Compatibility
-- OpenCode: Native
-- Claude Code: High
-- Codex CLI: Medium
-- Gemini CLI: Medium
-- Cursor: High
+## Platform Compatibility
+
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | Native |
+| Claude Code | Not Verified | — | High |
+| Codex CLI | Not Verified | — | Medium |
+| Gemini CLI | Not Verified | — | Medium |
+| Cursor | Not Verified | — | High |
 
 ## Advantages
 - Improves reliability
@@ -52,7 +64,7 @@ Validation layer agent
 ## Recommended Usage
 Use after implementation and before final commits
 
-## Adoption Decision
+## Adoption Note (recorded before ADR-004, without supporting evidence)
 Approved
 
 ## Related ADRs

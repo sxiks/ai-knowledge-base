@@ -1,3 +1,13 @@
+---
+id: AGT-006
+kind: component
+research_status: extracted
+decision: candidate
+environment: installed
+evidence:
+  - "research/research-environment.md · Installed Agents"
+---
+
 # Doc Master Agent
 
 ## Summary
@@ -12,9 +22,6 @@ N/A
 ## Category
 Agents
 
-## Status
-Active
-
 ## Priority
 High
 
@@ -27,12 +34,17 @@ Maintain consistent and structured documentation across the knowledge base.
 - Knowledge organization
 - Standardization enforcement
 
-## Compatibility
-- OpenCode: Native
-- Claude Code: High
-- Codex CLI: Medium
-- Gemini CLI: Medium
-- Cursor: High
+## Platform Compatibility
+
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | Native |
+| Claude Code | Not Verified | — | High |
+| Codex CLI | Not Verified | — | Medium |
+| Gemini CLI | Not Verified | — | Medium |
+| Cursor | Not Verified | — | High |
 
 ## Advantages
 - Ensures documentation consistency
@@ -52,7 +64,7 @@ Documentation layer agent
 ## Recommended Usage
 Use for all documentation creation and updates
 
-## Adoption Decision
+## Adoption Note (recorded before ADR-004, without supporting evidence)
 Approved
 
 ## Related ADRs

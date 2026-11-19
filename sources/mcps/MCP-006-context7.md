@@ -1,3 +1,14 @@
+---
+id: MCP-006
+kind: component
+research_status: extracted
+decision: candidate
+environment: installed
+evidence:
+  - "https://github.com/upstash/context7"
+  - "research/research-environment.md · Installed MCP Servers"
+---
+
 # Context7 MCP
 
 ## Summary
@@ -12,9 +23,6 @@ https://github.com/upstash/context7
 ## Category
 MCP
 
-## Status
-Active
-
 ## Priority
 Critical
 
@@ -27,12 +35,17 @@ Provide structured context retrieval for AI agents within development workflows.
 - Integration with AI coding agents
 - Memory augmentation support
 
-## Compatibility
-- OpenCode: Native
-- Claude Code: High
-- Codex CLI: Medium
-- Gemini CLI: Medium
-- Cursor: High
+## Platform Compatibility
+
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | Native |
+| Claude Code | Not Verified | — | High |
+| Codex CLI | Not Verified | — | Medium |
+| Gemini CLI | Not Verified | — | Medium |
+| Cursor | Not Verified | — | High |
 
 ## Advantages
 - Improves contextual accuracy
@@ -52,7 +65,7 @@ Core context provider MCP
 ## Recommended Usage
 Use as primary context retrieval system for AI workflows
 
-## Adoption Decision
+## Adoption Note (recorded before ADR-004, without supporting evidence)
 Approved
 
 ## Related ADRs

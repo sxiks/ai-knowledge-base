@@ -1,3 +1,13 @@
+---
+id: MET-003
+kind: component
+research_status: extracted
+decision: candidate
+environment: unknown
+evidence:
+  - "https://github.com/obra/superpowers (section not documented)"
+---
+
 # Bootstrap Philosophy
 
 ## Summary
@@ -15,10 +25,6 @@ https://github.com/obra/superpowers
 ## Category
 
 Methodology
-
-## Status
-
-Active
 
 ## Priority
 
@@ -52,15 +58,17 @@ Automation
 Optimization
 ```
 
-## Compatibility
+## Platform Compatibility
 
-| Platform | Support |
-|----------|---------|
-| OpenCode | Full |
-| Claude Code | Full |
-| Codex CLI | Full |
-| Gemini CLI | Full |
-| Cursor | Full |
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | Full |
+| Claude Code | Not Verified | — | Full |
+| Codex CLI | Not Verified | — | Full |
+| Gemini CLI | Not Verified | — | Full |
+| Cursor | Not Verified | — | Full |
 
 ## Advantages
 
@@ -86,7 +94,7 @@ Repository growth strategy.
 
 Apply when expanding the knowledge base.
 
-## Adoption Decision
+## Adoption Note (recorded before ADR-004, without supporting evidence)
 
 Adopted.
 

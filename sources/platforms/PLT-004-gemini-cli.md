@@ -1,3 +1,13 @@
+---
+id: PLT-004
+kind: component
+research_status: extracted
+decision: candidate
+environment: unknown
+evidence:
+  - "https://github.com/google-gemini/gemini-cli"
+---
+
 # Gemini CLI
 
 ## Summary
@@ -12,9 +22,6 @@ https://github.com/google-gemini/gemini-cli
 ## Category
 Platform
 
-## Status
-Evaluated
-
 ## Priority
 Medium
 
@@ -27,12 +34,17 @@ Alternative AI assistant for code generation and reasoning tasks.
 - API-based integration
 - Multimodal capabilities
 
-## Compatibility
-- OpenCode: Medium
-- Claude Code: Medium
-- Codex CLI: Medium
-- Gemini CLI: Native
-- Cursor: Medium
+## Platform Compatibility
+
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | Medium |
+| Claude Code | Not Verified | — | Medium |
+| Codex CLI | Not Verified | — | Medium |
+| Gemini CLI | Native | Platform resource (self) | Native |
+| Cursor | Not Verified | — | Medium |
 
 ## Advantages
 - Strong long-context handling
@@ -52,7 +64,7 @@ Auxiliary reasoning engine
 ## Recommended Usage
 Use for secondary validation and long-context analysis
 
-## Adoption Decision
+## Adoption Note (recorded before ADR-004, without supporting evidence)
 Optional
 
 ## Related ADRs

@@ -1,3 +1,15 @@
+---
+id: ECO-003
+kind: component
+research_status: reviewed
+decision: selective
+environment: unknown
+evidence:
+  - "research/reports/RPT-001-ecosystems.md"
+  - "docs/reviews/RPT-001-architecture-review.md"
+  - "docs/decisions/ADR-002-selective-ecc-adoption.md"
+---
+
 # ECC
 
 ## Summary
@@ -12,9 +24,6 @@ https://github.com/affaan-m/ECC
 ## Category
 Ecosystem
 
-## Status
-Selective Adoption
-
 ## Priority
 High
 
@@ -27,12 +36,17 @@ Provide curated reusable components for augmentation of the primary ecosystem.
 - Reusable MCP-like tools
 - Multi-framework compatibility
 
-## Compatibility
-- OpenCode: High
-- Claude Code: High
-- Codex CLI: Medium
-- Gemini CLI: Medium
-- Cursor: High
+## Platform Compatibility
+
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | High |
+| Claude Code | Not Verified | — | High |
+| Codex CLI | Not Verified | — | Medium |
+| Gemini CLI | Not Verified | — | Medium |
+| Cursor | Not Verified | — | High |
 
 ## Advantages
 - Large component ecosystem

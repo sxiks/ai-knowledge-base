@@ -1,3 +1,14 @@
+---
+id: MCP-005
+kind: component
+research_status: extracted
+decision: candidate
+environment: installed
+evidence:
+  - "https://github.com/microsoft/playwright-mcp"
+  - "research/research-environment.md · Installed MCP Servers"
+---
+
 # Playwright MCP
 
 ## Summary
@@ -12,9 +23,6 @@ https://github.com/microsoft/playwright-mcp
 ## Category
 MCP
 
-## Status
-Active
-
 ## Priority
 High
 
@@ -27,12 +35,17 @@ Enable automated browser interaction and testing for AI-driven workflows.
 - UI interaction simulation
 - Cross-browser support
 
-## Compatibility
-- OpenCode: High
-- Claude Code: High
-- Codex CLI: Medium
-- Gemini CLI: Medium
-- Cursor: High
+## Platform Compatibility
+
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | High |
+| Claude Code | Not Verified | — | High |
+| Codex CLI | Not Verified | — | Medium |
+| Gemini CLI | Not Verified | — | Medium |
+| Cursor | Not Verified | — | High |
 
 ## Advantages
 - Reliable automation layer
@@ -52,7 +65,7 @@ Automation and testing MCP
 ## Recommended Usage
 Use for validation, testing and UI automation tasks
 
-## Adoption Decision
+## Adoption Note (recorded before ADR-004, without supporting evidence)
 Approved
 
 ## Related ADRs

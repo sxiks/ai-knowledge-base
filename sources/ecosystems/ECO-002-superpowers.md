@@ -1,3 +1,15 @@
+---
+id: ECO-002
+kind: component
+research_status: reviewed
+decision: adopted
+environment: unknown
+evidence:
+  - "research/reports/RPT-001-ecosystems.md"
+  - "docs/reviews/RPT-001-architecture-review.md"
+  - "docs/decisions/ADR-001-primary-ecosystem.md"
+---
+
 # Superpowers
 
 ## Summary
@@ -12,9 +24,6 @@ https://github.com/obra/superpowers
 ## Category
 Ecosystem
 
-## Status
-Active
-
 ## Priority
 Critical
 
@@ -28,12 +37,17 @@ Primary methodological foundation for AI workflow architecture in this project.
 - Reproducible execution patterns
 - Tool-agnostic design
 
-## Compatibility
-- OpenCode: High
-- Claude Code: High
-- Codex CLI: High
-- Gemini CLI: High
-- Cursor: High
+## Platform Compatibility
+
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | High |
+| Claude Code | Not Verified | — | High |
+| Codex CLI | Not Verified | — | High |
+| Gemini CLI | Not Verified | — | High |
+| Cursor | Not Verified | — | High |
 
 ## Advantages
 - Strong architectural consistency

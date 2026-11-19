@@ -1,3 +1,14 @@
+---
+id: PLT-001
+kind: component
+research_status: extracted
+decision: candidate
+environment: installed
+evidence:
+  - "https://github.com/anomalyco/opencode"
+  - "research/research-environment.md · AI Platforms"
+---
+
 # OpenCode
 
 ## Summary
@@ -12,9 +23,6 @@ https://opencode.ai/docs
 ## Category
 Platform
 
-## Status
-Active
-
 ## Priority
 Critical
 
@@ -28,12 +36,17 @@ Primary execution environment for AI-assisted development workflows.
 - Plugin extensibility
 - CLI-driven interaction model
 
-## Compatibility
-- OpenCode: Native
-- Claude Code: High
-- Codex CLI: Medium
-- Gemini CLI: Medium
-- Cursor: High
+## Platform Compatibility
+
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Native | Platform resource (self) | Native |
+| Claude Code | Not Verified | — | High |
+| Codex CLI | Not Verified | — | Medium |
+| Gemini CLI | Not Verified | — | Medium |
+| Cursor | Not Verified | — | High |
 
 ## Advantages
 - Core development environment
@@ -53,7 +66,7 @@ Primary execution layer
 ## Recommended Usage
 Main environment for implementation phase after research approval
 
-## Adoption Decision
+## Adoption Note (recorded before ADR-004, without supporting evidence)
 Already adopted
 
 ## Related ADRs

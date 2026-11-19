@@ -6,6 +6,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Removed
+
+- `sources/skills/SKL-008-placeholder.md` (empty placeholder; ADR-004).
+
 ### Added
 
 - ADR-004 — Resource Lifecycle and Status Vocabulary (`research_status`, `decision`, `environment`, `kind`).
@@ -17,6 +21,10 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- All 47 resource files migrated to ADR-004 and ADR-005: YAML front matter (`id`, `kind`, `research_status`, `decision`, `environment`, `evidence`), the `Status` section removed, and a Platform Compatibility matrix with every value `Not Verified` (the previous unverified ratings are kept in a "Declared" column). Adoption texts without supporting evidence are renamed "Adoption Note (recorded before ADR-004, without supporting evidence)".
+- `templates/resources/resource-template.md`: front matter of ADR-004, compatibility matrix and adapter requirements of ADR-005, evaluation table aligned with the KES, and the same section structure as the resource files (its first heading previously produced a wrong index title).
+- `docs/reviews/component-registry.md`: lists only decided resources and uses the ADR-004 vocabulary.
+- `docs/architecture/conventions.md` and `CONTRIBUTING.md`: required metadata follows ADR-004 and ADR-005.
 - `research/research-roadmap.md` v2.0: seven phases (Plugins and MCP Servers; Engineering Utilities, Methodologies, LSPs and Workflows; Additional References; Final Consolidation).
 - `research/research-environment.md` v1.1: the five target platforms have the same compatibility priority; OpenCode is the current primary platform; `ai-workspace` is not created yet.
 - `research/research-goals.md` v2.1: numerical limits in ADRs apply to adoption, not to research.

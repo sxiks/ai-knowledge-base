@@ -1,3 +1,14 @@
+---
+id: MCP-007
+kind: component
+research_status: extracted
+decision: candidate
+environment: installed
+evidence:
+  - "https://github.com/github/github-mcp-server"
+  - "research/research-environment.md · Installed MCP Servers"
+---
+
 # GitHub MCP
 
 ## Summary
@@ -12,9 +23,6 @@ https://docs.github.com/
 ## Category
 MCP
 
-## Status
-Active
-
 ## Priority
 High
 
@@ -27,12 +35,17 @@ Enable AI agents to interact with GitHub repositories and development workflows.
 - Pull request automation
 - Workflow automation
 
-## Compatibility
-- OpenCode: High
-- Claude Code: High
-- Codex CLI: High
-- Gemini CLI: Medium
-- Cursor: High
+## Platform Compatibility
+
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | High |
+| Claude Code | Not Verified | — | High |
+| Codex CLI | Not Verified | — | High |
+| Gemini CLI | Not Verified | — | Medium |
+| Cursor | Not Verified | — | High |
 
 ## Advantages
 - Deep GitHub integration
@@ -52,7 +65,7 @@ Development workflow integration MCP
 ## Recommended Usage
 Use for all repository-related automation tasks
 
-## Adoption Decision
+## Adoption Note (recorded before ADR-004, without supporting evidence)
 Approved
 
 ## Related ADRs

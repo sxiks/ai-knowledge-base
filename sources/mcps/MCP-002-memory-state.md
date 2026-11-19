@@ -1,3 +1,12 @@
+---
+id: MCP-002
+kind: conceptual-pattern
+research_status: extracted
+decision: candidate
+environment: unknown
+evidence: []  # source section not documented (ADR-004, D-02)
+---
+
 # Memory State MCP
 
 ## Summary
@@ -5,9 +14,6 @@ MCP server providing persistent memory and state management for agent workflows.
 
 ## Category
 MCP Servers
-
-## Status
-Extracted
 
 ## Priority
 High
@@ -38,12 +44,17 @@ None
 - State corruption
 - Memory inconsistency
 
-## Compatibility
-- OpenCode: High
-- Claude Code: High
-- Codex CLI: Medium
-- Gemini CLI: Medium
-- Cursor: High
+## Platform Compatibility
+
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | High |
+| Claude Code | Not Verified | — | High |
+| Codex CLI | Not Verified | — | Medium |
+| Gemini CLI | Not Verified | — | Medium |
+| Cursor | Not Verified | — | High |
 
 ## Notes
 Essential for multi-step reasoning workflows.

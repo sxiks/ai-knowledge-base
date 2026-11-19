@@ -1,3 +1,13 @@
+---
+id: SKL-006
+kind: component
+research_status: extracted
+decision: candidate
+environment: unknown
+evidence:
+  - "https://github.com/JuliusBrussee/caveman"
+---
+
 # Caveman Skills
 
 ## Summary
@@ -12,9 +22,6 @@ https://github.com/JuliusBrussee/caveman
 ## Category
 Skills
 
-## Status
-Active
-
 ## Priority
 High
 
@@ -27,12 +34,17 @@ Provide lightweight skill execution patterns for fast iteration workflows.
 - Lightweight design
 - Easy adaptation
 
-## Compatibility
-- OpenCode: High
-- Claude Code: High
-- Codex CLI: Medium
-- Gemini CLI: Medium
-- Cursor: High
+## Platform Compatibility
+
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | High |
+| Claude Code | Not Verified | — | High |
+| Codex CLI | Not Verified | — | Medium |
+| Gemini CLI | Not Verified | — | Medium |
+| Cursor | Not Verified | — | High |
 
 ## Advantages
 - Very simple to understand
@@ -52,7 +64,7 @@ Lightweight skill layer
 ## Recommended Usage
 Use for simple workflows and fast prototyping
 
-## Adoption Decision
+## Adoption Note (recorded before ADR-004, without supporting evidence)
 Approved for selective use
 
 ## Related ADRs

@@ -1,3 +1,12 @@
+---
+id: MCP-011
+kind: conceptual-pattern
+research_status: extracted
+decision: candidate
+environment: unknown
+evidence: []  # source section not documented (ADR-004, D-02)
+---
+
 # GStack Playwright Wrapper
 
 ## Summary
@@ -5,9 +14,6 @@ Automation layer built on top of Playwright for structured workflow execution.
 
 ## Category
 MCP Servers
-
-## Status
-Extracted
 
 ## Priority
 Medium
@@ -21,12 +27,17 @@ Enable controlled browser automation within GStack workflows.
 - Structured browser tasks
 - Execution scripting
 
-## Compatibility
-- OpenCode: Medium
-- Claude Code: Medium
-- Codex CLI: Low
-- Gemini CLI: Low
-- Cursor: Medium
+## Platform Compatibility
+
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | Medium |
+| Claude Code | Not Verified | — | Medium |
+| Codex CLI | Not Verified | — | Low |
+| Gemini CLI | Not Verified | — | Low |
+| Cursor | Not Verified | — | Medium |
 
 ## Advantages
 - Structured automation

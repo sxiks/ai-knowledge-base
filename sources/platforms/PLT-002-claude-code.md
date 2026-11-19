@@ -1,3 +1,13 @@
+---
+id: PLT-002
+kind: component
+research_status: extracted
+decision: candidate
+environment: unknown
+evidence:
+  - "https://github.com/anthropics/claude-code"
+---
+
 # Claude Code
 
 ## Summary
@@ -12,9 +22,6 @@ https://docs.anthropic.com/
 ## Category
 Platform
 
-## Status
-Active
-
 ## Priority
 High
 
@@ -27,12 +34,17 @@ Secondary AI development environment for research, prototyping and agent executi
 - MCP compatibility (via integrations)
 - Code generation and refactoring support
 
-## Compatibility
-- OpenCode: High
-- Claude Code: Native
-- Codex CLI: Medium
-- Gemini CLI: Low
-- Cursor: High
+## Platform Compatibility
+
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | High |
+| Claude Code | Native | Platform resource (self) | Native |
+| Codex CLI | Not Verified | — | Medium |
+| Gemini CLI | Not Verified | — | Low |
+| Cursor | Not Verified | — | High |
 
 ## Advantages
 - Strong reasoning model integration
@@ -52,7 +64,7 @@ Research and reasoning layer
 ## Recommended Usage
 Use for analysis, validation and generation of structured research outputs
 
-## Adoption Decision
+## Adoption Note (recorded before ADR-004, without supporting evidence)
 Secondary platform adopted
 
 ## Related ADRs

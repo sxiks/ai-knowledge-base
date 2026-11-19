@@ -1,3 +1,13 @@
+---
+id: MET-002
+kind: component
+research_status: extracted
+decision: candidate
+environment: unknown
+evidence:
+  - "https://github.com/obra/superpowers (section not documented)"
+---
+
 # Provider-Agnostic Engineering
 
 ## Summary
@@ -16,10 +26,6 @@ https://github.com/obra/superpowers
 
 Methodology
 
-## Status
-
-Active
-
 ## Priority
 
 High
@@ -36,15 +42,17 @@ Design reusable workflows compatible with multiple AI coding platforms.
 - Reusable prompts.
 - Modular architecture.
 
-## Compatibility Strategy
+## Platform Compatibility
 
-| Platform | Supported |
-|----------|-----------|
-| OpenCode | Yes |
-| Claude Code | Yes |
-| Codex CLI | Yes |
-| Gemini CLI | Yes |
-| Cursor | Yes |
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | Yes |
+| Claude Code | Not Verified | — | Yes |
+| Codex CLI | Not Verified | — | Yes |
+| Gemini CLI | Not Verified | — | Yes |
+| Cursor | Not Verified | — | Yes |
 
 ## Advantages
 
@@ -70,7 +78,7 @@ Cross-platform engineering foundation.
 
 Apply to all new resources and workflows.
 
-## Adoption Decision
+## Adoption Note (recorded before ADR-004, without supporting evidence)
 
 Adopted.
 

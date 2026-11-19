@@ -1,3 +1,13 @@
+---
+id: PLG-001
+kind: component
+research_status: extracted
+decision: candidate
+environment: unknown
+evidence:
+  - "https://github.com/anthropics/claude-plugins-official"
+---
+
 # Claude Official Plugins
 
 ## Summary
@@ -12,9 +22,6 @@ https://github.com/anthropics/claude-plugins-official
 ## Category
 Plugins
 
-## Status
-Active
-
 ## Priority
 High
 
@@ -27,12 +34,17 @@ Extend Claude Code capabilities through official plugin system.
 - Tool integration support
 - Standardized plugin interface
 
-## Compatibility
-- OpenCode: Medium
-- Claude Code: Native
-- Codex CLI: Low
-- Gemini CLI: Low
-- Cursor: Medium
+## Platform Compatibility
+
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | Medium |
+| Claude Code | Not Verified | — | Native |
+| Codex CLI | Not Verified | — | Low |
+| Gemini CLI | Not Verified | — | Low |
+| Cursor | Not Verified | — | Medium |
 
 ## Advantages
 - Official support
@@ -52,7 +64,7 @@ Plugin system foundation
 ## Recommended Usage
 Use only officially supported plugins for Claude workflows
 
-## Adoption Decision
+## Adoption Note (recorded before ADR-004, without supporting evidence)
 Approved for Claude ecosystem integration
 
 ## Related ADRs

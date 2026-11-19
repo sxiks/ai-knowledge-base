@@ -1,3 +1,15 @@
+---
+id: ECO-001
+kind: component
+research_status: reviewed
+decision: reference
+environment: unknown
+evidence:
+  - "research/reports/RPT-001-ecosystems.md"
+  - "docs/reviews/RPT-001-architecture-review.md"
+  - "docs/decisions/ADR-003-gstack-reference-only.md"
+---
+
 # GStack
 
 ## Summary
@@ -12,9 +24,6 @@ https://github.com/garrytan/gstack
 ## Category
 Ecosystem
 
-## Status
-Reference Only
-
 ## Priority
 Low
 
@@ -26,12 +35,17 @@ Serve as reference material for workflow patterns and structural ideas.
 - Opinionated agent execution patterns
 - Integrated task flow design
 
-## Compatibility
-- OpenCode: Partial
-- Claude Code: Partial
-- Codex CLI: Unknown
-- Gemini CLI: Unknown
-- Cursor: Partial
+## Platform Compatibility
+
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | Partial |
+| Claude Code | Not Verified | — | Partial |
+| Codex CLI | Not Verified | — | Unknown |
+| Gemini CLI | Not Verified | — | Unknown |
+| Cursor | Not Verified | — | Partial |
 
 ## Advantages
 - Well structured workflow examples

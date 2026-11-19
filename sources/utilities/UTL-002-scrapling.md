@@ -1,3 +1,13 @@
+---
+id: UTL-002
+kind: component
+research_status: extracted
+decision: candidate
+environment: unknown
+evidence:
+  - "https://github.com/d4vinci/Scrapling"
+---
+
 # Scrapling
 
 ## Summary
@@ -12,9 +22,6 @@ https://github.com/d4vinci/Scrapling
 ## Category
 Utilities
 
-## Status
-Active
-
 ## Priority
 Medium
 
@@ -27,12 +34,17 @@ Enable extraction of structured data from external web resources for research pu
 - Lightweight scraping workflows
 - Flexible parsing system
 
-## Compatibility
-- OpenCode: Medium
-- Claude Code: High
-- Codex CLI: Medium
-- Gemini CLI: Medium
-- Cursor: Medium
+## Platform Compatibility
+
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | Medium |
+| Claude Code | Not Verified | — | High |
+| Codex CLI | Not Verified | — | Medium |
+| Gemini CLI | Not Verified | — | Medium |
+| Cursor | Not Verified | — | Medium |
 
 ## Advantages
 - Useful for research automation
@@ -52,7 +64,7 @@ Data extraction utility
 ## Recommended Usage
 Use for controlled data extraction from research sources
 
-## Adoption Decision
+## Adoption Note (recorded before ADR-004, without supporting evidence)
 Approved
 
 ## Related ADRs

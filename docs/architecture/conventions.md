@@ -32,6 +32,8 @@ Use ATX headings.
 
 Every resource starts with YAML Front Matter.
 
+Fields and allowed values are defined in ADR-004 (`id`, `kind`, `research_status`, `decision`, `environment`, `evidence`). Use `templates/resources/resource-template.md`.
+
 ---
 
 ## IDs

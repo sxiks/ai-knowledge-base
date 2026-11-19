@@ -1,3 +1,13 @@
+---
+id: SKL-007
+kind: component
+research_status: extracted
+decision: candidate
+environment: unknown
+evidence:
+  - "https://github.com/nidhinjs/prompt-master"
+---
+
 # Prompt Master Skills
 
 ## Summary
@@ -12,9 +22,6 @@ https://www.tododeia.com/community/prompt-master
 ## Category
 Skills
 
-## Status
-Active
-
 ## Priority
 High
 
@@ -27,12 +34,17 @@ Improve prompt engineering quality and consistency across AI workflows.
 - Instruction optimization methods
 - Reusable prompt systems
 
-## Compatibility
-- OpenCode: High
-- Claude Code: High
-- Codex CLI: Medium
-- Gemini CLI: High
-- Cursor: High
+## Platform Compatibility
+
+Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
+
+| Platform | Compatibility | Evidence | Declared (unverified) |
+|----------|---------------|----------|-----------------------|
+| OpenCode | Not Verified | — | High |
+| Claude Code | Not Verified | — | High |
+| Codex CLI | Not Verified | — | Medium |
+| Gemini CLI | Not Verified | — | High |
+| Cursor | Not Verified | — | High |
 
 ## Advantages
 - Strong improvement in prompt quality
@@ -52,7 +64,7 @@ Prompt engineering foundation layer
 ## Recommended Usage
 Use for all structured prompt design tasks
 
-## Adoption Decision
+## Adoption Note (recorded before ADR-004, without supporting evidence)
 Fully adopted
 
 ## Related ADRs
