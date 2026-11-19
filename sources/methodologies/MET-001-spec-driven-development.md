@@ -110,6 +110,7 @@ Adopted.
 
 - ECO-002
 - WKF-001
+- Overlaps with WKF-001, SKL-002, UTL-003: same concept (spec-driven development); relation type (derived, forked, extended) not yet established (D-06).
 
 ## Last Review
 

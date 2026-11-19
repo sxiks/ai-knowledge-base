@@ -56,5 +56,8 @@ Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without
 | Gemini CLI | Not Verified | — | Medium |
 | Cursor | Not Verified | — | High |
 
+## Related Resources
+- Overlaps with MCP-010, PLG-002: same concept (memory and state persistence); relation type (derived, forked, extended) not yet established (D-06).
+
 ## Notes
 Essential for multi-step reasoning workflows.

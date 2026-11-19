@@ -72,6 +72,7 @@ ADR-002
 
 ## Related Resources
 RPT-001
+- Overlaps with MCP-002, MCP-010: same concept (memory and state persistence); relation type (derived, forked, extended) not yet established (D-06).
 
 ## Last Review
 2026-07-02

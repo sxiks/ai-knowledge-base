@@ -62,5 +62,8 @@ Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without
 | Gemini CLI | Not Verified | — | High |
 | Cursor | Not Verified | — | High |
 
+## Related Resources
+- Overlaps with MET-001, WKF-001, UTL-003: same concept (spec-driven development); relation type (derived, forked, extended) not yet established (D-06).
+
 ## Notes
 Core methodology extracted from Superpowers framework.

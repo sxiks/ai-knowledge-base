@@ -23,10 +23,10 @@ https://github.com/google-gemini/gemini-cli
 Platform
 
 ## Priority
-Medium
+High
 
 ## Purpose
-Alternative AI assistant for code generation and reasoning tasks.
+AI coding agent based on Google Gemini models, used from the terminal. Target platform of the knowledge base.
 
 ## Key Features
 - Large context reasoning
@@ -59,10 +59,10 @@ Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without
 7/10
 
 ## Architectural Role
-Auxiliary reasoning engine
+Target platform with the same compatibility priority as the other four; it may become the primary platform (AD-5).
 
 ## Recommended Usage
-Use for secondary validation and long-context analysis
+Determined per component by the Platform Compatibility matrices (ADR-005).
 
 ## Adoption Note (recorded before ADR-004, without supporting evidence)
 Optional
@@ -74,7 +74,7 @@ ADR-001
 RPT-001
 
 ## Last Review
-2026-07-02
+2026-11-18
 
 ## Notes
-Not part of primary execution stack.
+Previous note (before AD-5): not part of primary execution stack. Superseded by research/research-environment.md v1.1.

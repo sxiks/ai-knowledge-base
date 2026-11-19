@@ -26,7 +26,7 @@ Platform
 High
 
 ## Purpose
-Secondary AI development environment for research, prototyping and agent execution.
+AI coding agent for software development from the terminal. Target platform of the knowledge base.
 
 ## Key Features
 - Agent execution environment
@@ -59,10 +59,10 @@ Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without
 9/10
 
 ## Architectural Role
-Research and reasoning layer
+Target platform with the same compatibility priority as the other four; it may become the primary platform (AD-5).
 
 ## Recommended Usage
-Use for analysis, validation and generation of structured research outputs
+Determined per component by the Platform Compatibility matrices (ADR-005).
 
 ## Adoption Note (recorded before ADR-004, without supporting evidence)
 Secondary platform adopted
@@ -74,7 +74,7 @@ ADR-001
 RPT-001
 
 ## Last Review
-2026-07-02
+2026-11-18
 
 ## Notes
-Used primarily for research and validation phases, not execution layer.
+Previous note (before AD-5): used for research and validation phases, not as execution layer. Superseded by research/research-environment.md v1.1.

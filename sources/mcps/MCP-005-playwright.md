@@ -73,6 +73,7 @@ ADR-001
 
 ## Related Resources
 RPT-001
+- Overlaps with MCP-001, MCP-011: same concept (browser automation); relation type (derived, forked, extended) not yet established (D-06).
 
 ## Last Review
 2026-07-02

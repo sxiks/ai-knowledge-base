@@ -57,5 +57,8 @@ Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without
 | Gemini CLI | Not Verified | — | Medium |
 | Cursor | Not Verified | — | High |
 
+## Related Resources
+- Overlaps with MCP-005, MCP-011: same concept (browser automation); relation type (derived, forked, extended) not yet established (D-06).
+
 ## Notes
 Core automation component from Superpowers ecosystem.

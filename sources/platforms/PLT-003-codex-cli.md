@@ -23,10 +23,10 @@ https://github.com/openai/codex
 Platform
 
 ## Priority
-Medium
+High
 
 ## Purpose
-Optional AI coding assistant for automation and auxiliary development tasks.
+AI coding agent from OpenAI for software development from the terminal. Target platform of the knowledge base.
 
 ## Key Features
 - CLI-based code generation
@@ -57,10 +57,10 @@ Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without
 7/10
 
 ## Architectural Role
-Auxiliary automation tool
+Target platform with the same compatibility priority as the other four; it may become the primary platform (AD-5).
 
 ## Recommended Usage
-Use for scripting and automation tasks when needed
+Determined per component by the Platform Compatibility matrices (ADR-005).
 
 ## Adoption Note (recorded before ADR-004, without supporting evidence)
 Optional
@@ -72,7 +72,7 @@ ADR-001
 RPT-001
 
 ## Last Review
-2026-07-02
+2026-11-18
 
 ## Notes
-Not part of core workflow. Use only for supporting tasks.
+Previous note (before AD-5): not part of core workflow; supporting tasks only. Superseded by research/research-environment.md v1.1.

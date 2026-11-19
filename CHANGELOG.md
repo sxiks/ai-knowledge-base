@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- `sources/platforms/PLT-005-cursor.md` — Cursor, the fifth target platform (ADR-005).
 - ADR-004 — Resource Lifecycle and Status Vocabulary (`research_status`, `decision`, `environment`, `kind`).
 - ADR-005 — Multi-Platform Component Model (shared components, platform-specific components, adapter requirements, compatibility matrix with evidence, component organization per platform).
 - `research/research-sources.md`: MCP Servers section, starting from the installed MCP servers.
@@ -23,6 +24,8 @@ All notable changes to this project will be documented in this file.
 
 - All 47 resource files migrated to ADR-004 and ADR-005: YAML front matter (`id`, `kind`, `research_status`, `decision`, `environment`, `evidence`), the `Status` section removed, and a Platform Compatibility matrix with every value `Not Verified` (the previous unverified ratings are kept in a "Declared" column). Adoption texts without supporting evidence are renamed "Adoption Note (recorded before ADR-004, without supporting evidence)".
 - `templates/resources/resource-template.md`: front matter of ADR-004, compatibility matrix and adapter requirements of ADR-005, evaluation table aligned with the KES, and the same section structure as the resource files (its first heading previously produced a wrong index title).
+- PLT-002, PLT-003 and PLT-004 describe their platform as a target with the same compatibility priority (AD-5); priority set to High; previous notes kept as history.
+- Overlapping resources linked in Related Resources (spec-driven development, browser automation, memory, review and validation).
 - `docs/reviews/component-registry.md`: lists only decided resources and uses the ADR-004 vocabulary.
 - `docs/architecture/conventions.md` and `CONTRIBUTING.md`: required metadata follows ADR-004 and ADR-005.
 - `research/research-roadmap.md` v2.0: seven phases (Plugins and MCP Servers; Engineering Utilities, Methodologies, LSPs and Workflows; Additional References; Final Consolidation).

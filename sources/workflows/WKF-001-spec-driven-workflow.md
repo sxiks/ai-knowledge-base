@@ -125,6 +125,7 @@ Adopted.
 
 - ECO-002
 - MET-001
+- Overlaps with MET-001, SKL-002, UTL-003: same concept (spec-driven development); relation type (derived, forked, extended) not yet established (D-06).
 
 ## Last Review
 

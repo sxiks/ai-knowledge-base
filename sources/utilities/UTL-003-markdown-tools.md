@@ -72,6 +72,7 @@ ADR-001
 
 ## Related Resources
 RPT-001
+- Overlaps with MET-001, WKF-001, SKL-002: same concept (spec-driven development); relation type (derived, forked, extended) not yet established (D-06).
 
 ## Last Review
 2026-07-02

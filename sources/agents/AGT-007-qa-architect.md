@@ -72,6 +72,7 @@ ADR-001
 
 ## Related Resources
 RPT-001
+- Overlaps with AGT-003, AGT-009: same concept (review and validation); relation type (derived, forked, extended) not yet established (D-06).
 
 ## Last Review
 2026-07-02

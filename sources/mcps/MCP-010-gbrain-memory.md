@@ -47,5 +47,8 @@ Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without
 - Requires storage backend
 - Potential memory drift
 
+## Related Resources
+- Overlaps with MCP-002, PLG-002: same concept (memory and state persistence); relation type (derived, forked, extended) not yet established (D-06).
+
 ## Notes
 GStack memory subsystem abstraction.

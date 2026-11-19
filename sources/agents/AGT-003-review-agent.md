@@ -63,5 +63,8 @@ Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without
 | Gemini CLI | Not Verified | — | Medium |
 | Cursor | Not Verified | — | High |
 
+## Related Resources
+- Overlaps with AGT-007, AGT-009: same concept (review and validation); relation type (derived, forked, extended) not yet established (D-06).
+
 ## Notes
 Quality assurance layer.

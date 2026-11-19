@@ -47,5 +47,8 @@ Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without
 - Browser dependency
 - Setup overhead
 
+## Related Resources
+- Overlaps with MCP-001, MCP-005: same concept (browser automation); relation type (derived, forked, extended) not yet established (D-06).
+
 ## Notes
 GStack automation extension layer.
