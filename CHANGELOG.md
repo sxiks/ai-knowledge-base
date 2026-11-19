@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Component Organization section in `PLT-001` to `PLT-005` (`sources/platforms/`): locations, formats, discovery rules and scope of instruction files, skills, agents and subagents, plugins or extensions, and MCP servers, from official documentation; documented, not tested (ADR-005).
 - `sources/platforms/PLT-005-cursor.md` — Cursor, the fifth target platform (ADR-005).
 - ADR-004 — Resource Lifecycle and Status Vocabulary (`research_status`, `decision`, `environment`, `kind`).
 - ADR-005 — Multi-Platform Component Model (shared components, platform-specific components, adapter requirements, compatibility matrix with evidence, component organization per platform).
@@ -22,6 +23,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- PLT-001: Last Review updated to 2026-11-18. PLT-005: note updated to point to its Component Organization section.
 - All 47 resource files migrated to ADR-004 and ADR-005: YAML front matter (`id`, `kind`, `research_status`, `decision`, `environment`, `evidence`), the `Status` section removed, and a Platform Compatibility matrix with every value `Not Verified` (the previous unverified ratings are kept in a "Declared" column). Adoption texts without supporting evidence are renamed "Adoption Note (recorded before ADR-004, without supporting evidence)".
 - `templates/resources/resource-template.md`: front matter of ADR-004, compatibility matrix and adapter requirements of ADR-005, evaluation table aligned with the KES, and the same section structure as the resource files (its first heading previously produced a wrong index title).
 - PLT-002, PLT-003 and PLT-004 describe their platform as a target with the same compatibility priority (AD-5); priority set to High; previous notes kept as history.
