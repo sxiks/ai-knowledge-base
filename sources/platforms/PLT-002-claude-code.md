@@ -34,6 +34,21 @@ AI coding agent for software development from the terminal. Target platform of t
 - MCP compatibility (via integrations)
 - Code generation and refactoring support
 
+## Component Organization
+
+Documented, not tested (ADR-005, sections 4 and 5). Sources consulted on 2026-11-18. This section records locations, formats, discovery rules and scope only; this repository does not install or configure the platform. "Not documented" means that no official source for that item was found in this review.
+
+| Component | Project scope | User scope | Format and discovery | Source |
+|-----------|---------------|------------|----------------------|--------|
+| Instruction files | `CLAUDE.md` (project root or `.claude/CLAUDE.md`); `CLAUDE.local.md` (private, project root); `AGENTS.md` (project root, `.claude/` or any directory); `.claude/rules/` (subdirectories allowed) | `~/.claude/CLAUDE.md`; `~/.claude/rules/` | Markdown. CLAUDE.md files are additive: files from the working directory upward load at launch, nested ones load when their subdirectory is accessed. Rules can be scoped to file paths with `paths` front matter. | https://code.claude.com/docs/en/claude-directory · https://code.claude.com/docs/en/features-overview |
+| Skills | `.claude/skills/<name>/SKILL.md` | `~/.claude/skills/` | Directory with `SKILL.md`. Descriptions load at session start, full content when used. Same name at several levels: managed > user > project. Plugin skills are namespaced (`/plugin-name:skill`). | https://code.claude.com/docs/en/claude-directory · https://code.claude.com/docs/en/features-overview |
+| Agents and subagents | `.claude/agents/*.md` | `~/.claude/agents/` | Markdown files. Same name at several levels: managed > CLI flag > project > user > plugin. | https://code.claude.com/docs/en/claude-directory · https://code.claude.com/docs/en/features-overview |
+| Plugins | Not documented at a project path | Installed plugins in `~/.claude/plugins` | Manifest `.claude-plugin/plugin.json`. A plugin bundles skills, hooks, subagents and MCP servers, and is distributed through marketplaces. | https://code.claude.com/docs/en/claude-directory · https://code.claude.com/docs/en/skills · https://code.claude.com/docs/en/features-overview |
+| MCP servers | `.mcp.json` at the project root (not inside `.claude/`) | `~/.claude.json` (user and local scopes) | Same server name at several scopes: local > project > user. | https://code.claude.com/docs/en/claude-directory · https://code.claude.com/docs/en/features-overview |
+
+- If `CLAUDE_CONFIG_DIR` is set, every `~/.claude` path lives under that directory instead.
+- Hooks have no separate file; they are configured under the `hooks` key of `.claude/settings.json` or `~/.claude/settings.json`.
+
 ## Platform Compatibility
 
 Values follow ADR-005. "Declared" is the rating recorded before ADR-005, without evidence.
