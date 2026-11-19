@@ -17,7 +17,7 @@ AI coding environment used for agent-assisted development and research execution
 https://github.com/anthropics/claude-code
 
 ## Official Documentation
-https://docs.anthropic.com/
+https://code.claude.com/docs
 
 ## Category
 Platform
@@ -93,3 +93,5 @@ RPT-001
 
 ## Notes
 Previous note (before AD-5): used for research and validation phases, not as execution layer. Superseded by research/research-environment.md v1.1.
+
+Official Documentation previously recorded as https://docs.anthropic.com/ (changed on 2026-11-18, T-115).

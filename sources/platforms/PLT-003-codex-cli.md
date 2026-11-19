@@ -17,7 +17,7 @@ CLI-based AI coding assistant designed for code generation and automation workfl
 https://github.com/openai/codex
 
 ## Official Documentation
-https://github.com/openai/codex
+https://developers.openai.com/codex
 
 ## Category
 Platform
@@ -91,3 +91,5 @@ RPT-001
 
 ## Notes
 Previous note (before AD-5): not part of core workflow; supporting tasks only. Superseded by research/research-environment.md v1.1.
+
+Official Documentation previously recorded as https://github.com/openai/codex (changed on 2026-11-18, T-115).
