@@ -6,12 +6,17 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+---
+
+## [0.2.0] - 2026-11-24 - Architectural Reconciliation
+
 ### Removed
 
 - `sources/skills/SKL-008-placeholder.md` (empty placeholder; ADR-004).
 
 ### Added
 
+- Versioning policy in `docs/architecture/repository-workflow.md` (Branches and Versions) and the `release` section of `docs/status/project-status.json`.
 - `AGENTS.md` (instructions for AI coding agents), `.githooks/commit-msg` (rejects AI attribution in commit messages) and a Commit Messages section in `CONTRIBUTING.md`.
 - `scripts/validate_status.py` — checks `docs/status/project-status.json` against the repository (standard library only).
 - `docs/status/project-status.json` — canonical project status (AD-4): phases, ADRs, reconciliation plan and discrepancies, open tasks and resource counts. `docs/status/README.md` defines its update rules and vocabularies.
@@ -26,6 +31,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- `docs/status/project-status.json`: `branches` (branch heads, which went stale with every commit) replaced by `release` (current version and branch policy); `scripts/validate_status.py` checks it against the CHANGELOG.
 - History of `develop`: the AI attribution lines were removed from three commit messages (rewritten as e44dc31, 71f29dc and c001ef2, same content, authors and dates).
 - `docs/status/project-status.json`: R3d and D-18 linked to 71f29dc; evidence recorded for D-21 and D-22; T-115 closed. `docs/status/README.md`, `docs/architecture/repository-workflow.md` and `scripts/README.md` describe the validator.
 - PLT-002, PLT-003 and PLT-004: Official Documentation points to each platform's documentation site (T-115); the previous values are kept in Notes.

@@ -12,6 +12,7 @@
 - A discrepancy resolved without a file change has `commit: null` and an `evidence` list that explains how it was verified.
 - Unknown values are `null`. No percentages or progress estimates are recorded.
 - A task is listed in `open_tasks` until it is completed with evidence; completed tasks are recorded in the commit history and the CHANGELOG.
+- `release` records the current version (`CHANGELOG.md`) and the branch policy. Branch heads are not recorded: Git is their source.
 - `resources` is computed from the YAML front matter of the resource files (`sources/<category>/*.md`) and must be recomputed when they change.
 - `scripts/validate_status.py` checks the file against the repository; run it before every commit that changes the file.
 

@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "description": "Canonical project status of ai-knowledge-base (AD-4). Every summary or dashboard of the project is derived from this file. Rules and vocabularies: docs/status/README.md.",
   "updated": "2026-11-24",
-  "based_on_commit": "c001ef2",
+  "based_on_commit": "33d0b7a",
   "project": {
     "name": "ai-knowledge-base",
     "repository": "https://github.com/sxiks/ai-knowledge-base",
@@ -22,10 +22,12 @@
     },
     "platform_setup": "out-of-scope"
   },
-  "branches": {
-    "develop": "c001ef2",
-    "main": "6b1f84a",
-    "note": "main has not received the reconciliation commits."
+  "release": {
+    "current_version": "0.2.0",
+    "tag": "v0.2.0",
+    "date": "2026-11-24",
+    "title": "Architectural Reconciliation",
+    "policy": "main only moves by fast-forward from develop when a phase or stage closes; each update of main is a version with a CHANGELOG section and an annotated tag (docs/architecture/repository-workflow.md, Branches and Versions)."
   },
   "current_stage": {
     "name": "Architectural reconciliation",
@@ -616,14 +618,6 @@
       "status": "pending",
       "priority": "Medium",
       "next": "During the review of the phase of each source."
-    },
-    {
-      "id": "T-119",
-      "phase": null,
-      "title": "Update main from develop by fast-forward",
-      "status": "pending",
-      "priority": "Medium",
-      "next": "After the commit-message safeguards; version number to be confirmed."
     }
   ],
   "resources": {

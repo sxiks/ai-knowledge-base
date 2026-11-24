@@ -2,8 +2,9 @@
 """validate_status.py
 
 Checks docs/status/project-status.json against the repository:
-vocabularies, referenced paths and commits, phases (research roadmap),
-ADRs (docs/decisions) and resource counts (front matter of sources/).
+vocabularies, referenced paths and commits, release (CHANGELOG), phases
+(research roadmap), ADRs (docs/decisions) and resource counts (front
+matter of sources/).
 
 Standard library only. Exit code 0 when every check passes, 1 otherwise.
 """
@@ -26,7 +27,7 @@ VOCAB = {
     "task": {"pending", "in-progress", "needs-review", "needs-validation", "blocked", "deferred"},
     "priority": {"High", "Medium", "Low", None},
 }
-REQUIRED = ["schema_version", "updated", "based_on_commit", "project", "branches",
+REQUIRED = ["schema_version", "updated", "based_on_commit", "project", "release",
             "current_stage", "phases", "decisions", "reconciliation", "open_tasks", "resources"]
 RESOURCE_FIELDS = {"by_research_status": "research_status", "by_decision": "decision",
                    "by_kind": "kind", "by_environment": "environment"}
@@ -82,9 +83,16 @@ def main():
     check_commit(base, "based_on_commit")
     if base and git("merge-base", "--is-ancestor", base, "HEAD").returncode != 0:
         fail(f"based_on_commit {base} is not an ancestor of HEAD")
-    for name, value in status["branches"].items():
-        if name != "note":
-            check_commit(value, f"branches.{name}")
+
+    # Release against the CHANGELOG
+    release = status["release"]
+    version = release.get("current_version")
+    changelog = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
+    heading = f"## [{version}] - {release.get('date')} - {release.get('title')}"
+    if heading not in changelog:
+        fail(f"release: '{heading}' not found in CHANGELOG.md")
+    if release.get("tag") != f"v{version}":
+        fail(f"release: tag '{release.get('tag')}' does not match version {version}")
 
     # Phases against the research roadmap
     roadmap = (ROOT / "research" / "research-roadmap.md").read_text(encoding="utf-8")

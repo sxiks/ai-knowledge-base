@@ -52,6 +52,13 @@ Next Research Phase
 
 Project status: a commit that changes the state of a phase, review, ADR, reconciliation step or open task also updates `docs/status/project-status.json` (AD-4; rules in `docs/status/README.md`).
 
+### Branches and Versions
+
+- `develop` is the integration branch. Every change is made on a feature branch and merged into `develop` by fast-forward.
+- `main` is the stable branch. It only moves by fast-forward from `develop`, when a phase or stage closes; it never receives direct commits or merge commits.
+- Every update of `main` is a version `MAJOR.MINOR.PATCH`: a closed phase or stage increases `MINOR`, a correction of an already released state increases `PATCH`. `MAJOR` stays at `0` until the final recommendation (RPT-999) is adopted.
+- A version has a section `## [X.Y.Z] - YYYY-MM-DD - <title>` in `CHANGELOG.md`, the `release` section of `docs/status/project-status.json`, and an annotated tag `vX.Y.Z` on `main`. Tag messages follow the commit message rules of `CONTRIBUTING.md`.
+
 The first step was historically called "Claude Investigation". It is provider-independent: any AI-assisted research that follows the protocol qualifies.
 
 ---

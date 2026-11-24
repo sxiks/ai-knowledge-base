@@ -54,7 +54,7 @@ Only `sources/*/README.md` files are generated. Every other document, including 
 Requires `python3` (standard library only) and `git`. It checks that `docs/status/project-status.json`:
 
 1. Has every top-level key and uses the vocabularies of `docs/status/README.md`.
-2. References commits that exist, and that `based_on_commit` is an ancestor of `HEAD`.
+2. References commits that exist, and that `based_on_commit` is an ancestor of `HEAD`; its `release` version and date appear as a section of `CHANGELOG.md`.
 3. Lists the phases, names and report files of `research/research-roadmap.md`, and marks a report as present only if it exists.
 4. Lists every ADR of `docs/decisions/` with its title, status and date.
 5. Records resolved discrepancies with a commit or with evidence.
