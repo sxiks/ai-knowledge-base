@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- `AGENTS.md` (instructions for AI coding agents), `.githooks/commit-msg` (rejects AI attribution in commit messages) and a Commit Messages section in `CONTRIBUTING.md`.
 - `scripts/validate_status.py` — checks `docs/status/project-status.json` against the repository (standard library only).
 - `docs/status/project-status.json` — canonical project status (AD-4): phases, ADRs, reconciliation plan and discrepancies, open tasks and resource counts. `docs/status/README.md` defines its update rules and vocabularies.
 - Component Organization section in `PLT-001` to `PLT-005` (`sources/platforms/`): locations, formats, discovery rules and scope of instruction files, skills, agents and subagents, plugins or extensions, and MCP servers, from official documentation; documented, not tested (ADR-005).
@@ -25,6 +26,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- History of `develop`: the AI attribution lines were removed from three commit messages (rewritten as e44dc31, 71f29dc and c001ef2, same content, authors and dates).
 - `docs/status/project-status.json`: R3d and D-18 linked to 71f29dc; evidence recorded for D-21 and D-22; T-115 closed. `docs/status/README.md`, `docs/architecture/repository-workflow.md` and `scripts/README.md` describe the validator.
 - PLT-002, PLT-003 and PLT-004: Official Documentation points to each platform's documentation site (T-115); the previous values are kept in Notes.
 - `docs/architecture/repository-workflow.md`: commits that change the project state also update `docs/status/project-status.json`. `README.md`: `docs/` includes the project status.

@@ -43,7 +43,9 @@ docs/        Architecture, decisions (ADRs), reviews and project status
 research/    Research inputs, protocol, roadmap, reports and archives
 sources/     Knowledge base resources, one file per resource
 templates/   Reusable document templates
-scripts/     Repository automation (bootstrap, index generation)
+scripts/     Repository automation (bootstrap, index generation, status validation)
+.githooks/   Git hooks (commit message rules)
+AGENTS.md    Instructions for AI coding agents
 ```
 
 `scripts/bootstrap.sh` also creates `archive/` and `assets/` locally. They are not tracked by Git while empty.

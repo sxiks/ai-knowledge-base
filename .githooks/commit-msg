@@ -1,0 +1,23 @@
+#!/bin/sh
+# commit-msg hook: rejects commit messages that attribute the work to an AI
+# assistant (co-author trailers, "generated with" lines, session links).
+# Rules: CONTRIBUTING.md, section "Commit Messages".
+# Enable once per clone: git config core.hooksPath .githooks
+
+msg_file="$1"
+
+trailer='^(co-authored-by|claude-session)[[:space:]]*:.*(claude|anthropic)'
+session='^claude-session[[:space:]]*:|claude\.ai/(code|chat)|claude\.com/claude-code|noreply@anthropic\.com'
+phrase_en='(generated|created|made|built|written|implemented|assisted|developed|authored)[[:space:]]+(with|by|using)[[:space:]]+(the[[:space:]]+help[[:space:]]+of[[:space:]]+)?\[?claude'
+phrase_es='(hecho|creado|generado|desarrollado|implementado|asistido|escrito)[[:space:]]+(con|por|mediante)[[:space:]]+(la[[:space:]]+)?(ayuda[[:space:]]+de[[:space:]]+)?claude'
+
+matches=$(grep -v '^#' "$msg_file" | grep -niE "$trailer|$session|$phrase_en|$phrase_es")
+
+if [ -n "$matches" ]; then
+    echo "commit-msg: the commit message attributes the work to an AI assistant:" >&2
+    echo "$matches" >&2
+    echo "Remove those lines and commit again (CONTRIBUTING.md, Commit Messages)." >&2
+    exit 1
+fi
+
+exit 0
